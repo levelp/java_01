@@ -13,6 +13,7 @@
     <modules>
         <module>01_HelloWorld</module>
         <module>02_OOP</module>
+        <module>03_ModifiersDemo</module>
         <module>04_JUnit</module>
         <module>05_SquareEq</module>
         <module>06_DateDemo</module>

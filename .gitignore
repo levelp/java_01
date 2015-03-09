@@ -11,17 +11,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-nbproject
-out
-
 atlassian-ide-plugin.xml
 .DS_Store
 
+nbproject
+out
 private
 build
 dist
-out
 target
 
 # Log-files
 *.log
+
+# Конфигурационный файл .idea
+.idea/workspace.xml
+

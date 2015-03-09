@@ -27,6 +27,7 @@ def parse(file_name):
     """
     code = False
     with open(file_name, "r", encoding="utf-8-sig") as f:
+        print()
         for line in f:
             if '//-->' in line:
                 print('``` ' + lang(file_name))
