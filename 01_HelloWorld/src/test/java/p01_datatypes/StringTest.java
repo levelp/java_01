@@ -89,6 +89,7 @@ public class StringTest {
         String b = a.substring(0, 4);
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+        assertEquals("test", b);
         String c = "test";
         System.out.println("c = " + c);
         System.out.println("(c == b) = " + (c == b));
@@ -96,6 +97,7 @@ public class StringTest {
         assertFalse(c == b);
         assertTrue(c.equals(b));
     }
+    //<!--
 
     @Test
     public void testArrayString() {

@@ -9,6 +9,11 @@
     <artifactId>04_JUnit</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
     <parent>
         <groupId>java</groupId>
         <artifactId>java_01</artifactId>

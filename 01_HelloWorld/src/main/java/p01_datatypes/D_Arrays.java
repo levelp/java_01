@@ -1,7 +1,7 @@
 package p01_datatypes;
 
-// Массивы
-// -------
+// Массивы: foreach, многомерные
+// -----------------------------
 public class D_Arrays {
     public static void main(String[] args) {
         //-->

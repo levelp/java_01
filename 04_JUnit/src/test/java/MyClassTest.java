@@ -4,7 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 // Тесты в JUnit
-// -------------
+//
 // Цель: Либо протестировать уже готовый код.
 //
 // Либо **регрессионное** тестирование:
