@@ -659,6 +659,9 @@ double D = b * b - 4 * a * c;
 ```
 
 
+Markdown файл
+=============
+
 
 
 Перевод строки на разных платформах
@@ -692,6 +695,7 @@ Returns the char value at the specified index
         String b = a.substring(0, 4);
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+        assertEquals("test", b);
         String c = "test";
         System.out.println("c = " + c);
         System.out.println("(c == b) = " + (c == b));
@@ -699,6 +703,7 @@ Returns the char value at the specified index
         assertFalse(c == b);
         assertTrue(c.equals(b));
     }
+    //<!--
 
     @Test
     public void testArrayString() {
