@@ -28,6 +28,7 @@
         <module>10_ReadTextDemo</module>
         <module>12_IntegrationTesting</module>
         <module>HW_ResumeModel</module>
+        <module>TasksModel</module>
     </modules>
 
     <build>
@@ -38,8 +39,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
                     <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
+                        <source>1.7</source>
+                        <target>1.7</target>
                     </configuration>
                 </plugin>
             </plugins>
