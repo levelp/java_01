@@ -2,10 +2,20 @@
 Синтаксис Java. ООП. Тестирование и отладка
 ===========================================
 
+TODO:
+-----
+* Зарегистироваться на github.com
+* Подать заявку на вступление в: https://github.com/levelp
+* Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+
 Знакомство
 ----------
 
-Степулёнок Денис Олегович - Stden@mail.ru
+* Степулёнок Денис Олегович - super.denis@gmail.com
+* Громов Илья Анварович - igromovbox@gmail.com
+
+Работаем в Oracle
 
 Обзор сайтов и литературы по Java и ООП
 ---------------------------------------
@@ -386,16 +396,21 @@ public class Main {
 2. 16-битное целое **short**: -2^15..2^15-1  -32768..32767
 ``` java
         short sh = 32767; // -32768..32767
+        System.out.println("short = " + sh + " " + Short.MIN_VALUE + ".." + Short.MAX_VALUE);
 ```
 
 3. 32-битное целое **int**
 ``` java
         int integerBinary = 0b10101010; // Начиная с Java7
+        System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
         // Java6
         int intBin = Integer.parseInt("1011", 2);
+        System.out.println("intBin = " + Integer.toBinaryString(intBin));
         int integerHex = 0xFFA9; // Шестнадцатеричная система счисления
+        System.out.printf("Hex: %04X %n", integerHex);
         // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
-        int i = 2147483647; // 2^31-1
+        int maxInt = 2147483647; // 2^31-1
+        System.out.printf("maxInt = %08X %n", maxInt);
 ```
 
 4. 64-битное целое **long**
@@ -430,6 +445,7 @@ public class Main {
 
 Переменные, методы, классы можно
 называть по-русски, имена в кодировке Unicode
+И это лучше чем в транслите
 Условный оператор **if**
 ``` java
         if (a > 1) { // Когда условие истинно
@@ -462,10 +478,13 @@ public class Main {
         // Инкремент
         a = a + 1;
         a++; // Постфиксная форма
+        System.out.println("a = " + a);
         a = 2;
         int aa = a++; // aa = 2
+        System.out.println("aa = " + aa);
         // a = 3
         int a1 = ++a; // a1 = 4, a = 4
+        System.out.println("a1 = " + a1);
         ++a; // Префиксная форма
         // Декремент
         a = a - 1;
@@ -815,6 +834,9 @@ Returns the char value at the specified index
     }
 }
 [01_HelloWorld/src/test/java/p01_datatypes/StringTest.java](01_HelloWorld/src/test/java/p01_datatypes/StringTest.java)
+
+Использование Markdown-разметки для документации
+------------------------------------------------
 
 Основы объектно-ориентированного программирования: Класс. Экземпляр класса (объект)
 -----------------------------------------------------------------------------------
@@ -1325,6 +1347,42 @@ Find precision limit
 Фото
 
 [HW_ResumeModel/src/main/java/Resume.java](HW_ResumeModel/src/main/java/Resume.java)
+
+﻿TODO-list
+---------
+
+* Класс задача Task
+* Список подзадач, возможно пустой: List<Task> subtasks = new ...
+
+Метафора системы:
+* Доска: каждый дописывает на доску то что может, забирает и
+   вычёркивает с доски что может.
+
+**Коннекторы для задач:**
+* Источники задач: электронная почта, ввод на сайте, ввод в приложении
+* Синхронизация (другие списки задач)
+** Wunderlist: https://developer.wunderlist.com/documentation
+** GTasks: https://developers.google.com/google-apps/tasks/
+* Автоматические исполнители (скрипты, службы, делегировать)
+
+**Задачи группируются по контекстам:**
+* где? (дом, магазин, etc.) - геолокация на мобильном телефоне.
+* когда? (утро, вечер, можно анализировать)
+Территориальным, временным,
+* Любым тегам пользовательским (когда вижу техлида, девушку... и т.д.)
+
+Time-tracking - запись событий по времени для сравнения с исходным планом.
+
+**Коннекторы для календаря:**
+* Google Calendar API - https://developers.google.com/google-apps/calendar/
+* VKontakte API - https://vk.com/apiclub
+
+Давайте и сам курс запихнём в такой список задач.
+
+Важно: версионность списка задач/календаря - можно в любой момент выгрузить всё в виде
+простого текста и сравнить с предыдущим, а также откатиться на любую предыдущую версию.
+
+Свой открытый API для создания клиентов под iOS и другие ОС?
 
 ﻿Графические библиотеки (обзор): AWT, Swing, JavaFX
 --------------------------------------------------

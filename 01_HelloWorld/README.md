@@ -1,6 +1,6 @@
 <!-- doc.py -->
-Лексика языка Java
-------------------
+Лексика языка Java: комментарии, операторы, переменные, литералы, присваивание, операторные скобки
+--------------------------------------------------------------------------------------------------
 * Переменные
 * Литералы
 * Условия
@@ -47,8 +47,8 @@ cout << "Hello, world!" << endl; // C++
 ```
 [src/main/java/p00_helloworld/HelloWorld.java](src/main/java/p00_helloworld/HelloWorld.java)
 
-Шаблоны Idea для быстрого ввода кода
-------------------------------------
+Шаблоны Idea для быстрого ввода кода: psvm, sout+v/m, fori...
+-------------------------------------------------------------
 ``` java
     // Шаблон: psvm + <tab>
     public static void main(String[] args) {
@@ -106,16 +106,21 @@ public class Main {
 2. 16-битное целое **short**: -2^15..2^15-1  -32768..32767
 ``` java
         short sh = 32767; // -32768..32767
+        System.out.println("short = " + sh + " " + Short.MIN_VALUE + ".." + Short.MAX_VALUE);
 ```
 
 3. 32-битное целое **int**
 ``` java
         int integerBinary = 0b10101010; // Начиная с Java7
+        System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
         // Java6
         int intBin = Integer.parseInt("1011", 2);
+        System.out.println("intBin = " + Integer.toBinaryString(intBin));
         int integerHex = 0xFFA9; // Шестнадцатеричная система счисления
+        System.out.printf("Hex: %04X %n", integerHex);
         // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
-        int i = 2147483647; // 2^31-1
+        int maxInt = 2147483647; // 2^31-1
+        System.out.printf("maxInt = %08X %n", maxInt);
 ```
 
 4. 64-битное целое **long**
@@ -150,6 +155,7 @@ public class Main {
 
 Переменные, методы, классы можно
 называть по-русски, имена в кодировке Unicode
+И это лучше чем в транслите
 Условный оператор **if**
 ``` java
         if (a > 1) { // Когда условие истинно
@@ -164,8 +170,8 @@ public class Main {
 Цикл for
 Вывод аргументов командной строки
 
-Сокращённая форма, инкремент/декремент, префиксный/постфиксный
---------------------------------------------------------------
+Сокращённая форма: +=, -=..., инкремент/декремент, префиксный/постфиксный
+-------------------------------------------------------------------------
 ``` java
         // Сложение
         a = a + 10;
@@ -182,10 +188,13 @@ public class Main {
         // Инкремент
         a = a + 1;
         a++; // Постфиксная форма
+        System.out.println("a = " + a);
         a = 2;
         int aa = a++; // aa = 2
+        System.out.println("aa = " + aa);
         // a = 3
         int a1 = ++a; // a1 = 4, a = 4
+        System.out.println("a1 = " + a1);
         ++a; // Префиксная форма
         // Декремент
         a = a - 1;
@@ -394,8 +403,9 @@ i передаётся по ссылке
 
 [src/main/java/p01_datatypes/I_Printf.java](src/main/java/p01_datatypes/I_Printf.java)
 
-Решение квадратного уравнения
------------------------------
+
+**Решение квадратного уравнения**
+
 Считываем коэффициенты с клавиатуры
 ``` java
         double a, b, c;
@@ -432,14 +442,6 @@ double D = b * b - 4 * a * c;
         }
 ```
 
-Графические библиотеки:
------------------------
-* AWT (Abstract Window Toolkit) - исходная платформо-независимая оконная библиотека графического интерфейса
-(Widget toolkit) языка Java
-* Swing - библиотека для создания графического интерфейса для программ на языке Java.
-* JavaFX - платформа для создания RIA, позволяет строить унифицированные приложения
-с насыщенным графическим интерфейсом пользователя для непосредственного запуска из-под операционных систем,
-работы в браузерах и на мобильных телефонах, в том числе, работающих с мультимедийным содержимым.
 [src/main/java/p01_datatypes/Z_SquareEq.java](src/main/java/p01_datatypes/Z_SquareEq.java)
 
 Циклы: while, do while, for
@@ -542,4 +544,7 @@ Returns the char value at the specified index
     }
 }
 [src/test/java/p01_datatypes/StringTest.java](src/test/java/p01_datatypes/StringTest.java)
+
+Использование Markdown-разметки для документации
+------------------------------------------------
 

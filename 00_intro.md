@@ -1,10 +1,20 @@
 Синтаксис Java. ООП. Тестирование и отладка 
 ===========================================
 
+TODO:
+-----
+* Зарегистироваться на github.com
+* Подать заявку на вступление в: https://github.com/levelp
+* Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+
 Знакомство
 ----------
 
-Степулёнок Денис Олегович - Stden@mail.ru
+* Степулёнок Денис Олегович - super.denis@gmail.com 
+* Громов Илья Анварович - igromovbox@gmail.com
+
+Работаем в Oracle
 
 Обзор сайтов и литературы по Java и ООП
 ---------------------------------------
