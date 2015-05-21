@@ -7,6 +7,7 @@ TODO:
 * Подать заявку на вступление в: https://github.com/levelp
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+* https://meet93023175.adobeconnect.com - вебинар
 
 Знакомство
 ----------
@@ -254,8 +255,9 @@ public class Main {
 Установка и настройка Apache Maven. Центральный репозиторий. POM (project object model)
 ---------------------------------------------------------------------------------------
 * http://maven.apache.org/ - скачивание maven
-* Распаковать в папку на диске, например в C:\apache-maven-3.2.3\
-* Устанавливаем переменную окружения: M2_HOME=C:\apache-maven-3.2.3
+* Распаковать в папку на диске, например в **C:\apache-maven-3.2.3**
+* Добавить в пути (в переменную окружения PATH) - **C:\apache-maven-3.2.3\bin**
+* Устанавливаем переменную окружения: **M2_HOME=C:\apache-maven-3.2.3**
 
 
 Установка и настройка Git + GitHub. Клиент git для Windows 
