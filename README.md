@@ -8,6 +8,7 @@ TODO:
 * Подать заявку на вступление в: https://github.com/levelp
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+* https://meet93023175.adobeconnect.com - вебинар
 
 Знакомство
 ----------
