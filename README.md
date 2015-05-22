@@ -9,6 +9,7 @@ TODO:
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
 * https://meet93023175.adobeconnect.com - вебинар
+* https://meet93023175.adobeconnect.com/p4ory9x86j7/ - запись вебинара
 
 Знакомство
 ----------
