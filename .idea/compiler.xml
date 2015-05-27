@@ -86,10 +86,17 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
+      <module name="01_HelloWorld" target="1.8" />
+      <module name="02_OOP" target="1.8" />
+      <module name="03_ModifiersDemo" target="1.8" />
+      <module name="04_JUnit" target="1.8" />
+=======
       <module name="01_HelloWorld" target="1.7" />
       <module name="02_OOP" target="1.8" />
       <module name="03_ModifiersDemo" target="1.7" />
       <module name="04_JUnit" target="1.7" />
+>>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
       <module name="05_SquareEq" target="1.5" />
       <module name="06_DateDemo" target="1.5" />
       <module name="07_ArcSin" target="1.5" />
@@ -98,10 +105,15 @@
       <module name="10_ReadTextDemo" target="1.5" />
       <module name="12_IntegrationTesting" target="1.7" />
       <module name="99_ResumeModel" target="1.5" />
+<<<<<<< HEAD
+      <module name="HW_ResumeModel" target="1.8" />
+      <module name="java_01" target="1.5" />
+=======
       <module name="HW_ResumeModel" target="1.7" />
       <module name="java_01" target="1.5" />
       <module name="TaskModel" target="1.8" />
       <module name="TasksModel" target="1.7" />
+>>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
     </bytecodeTargetLevel>
   </component>
 </project>
