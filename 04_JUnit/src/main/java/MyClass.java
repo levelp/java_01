@@ -9,6 +9,8 @@ public class MyClass {
      * @return факториал
      */
     public static long fact(int n) {
+        // (Условие) ? Значение_если_истина :
+        //                Значение_если_ложь
         return (n == 0) ? 1 : n * fact(n - 1);
     }
 }

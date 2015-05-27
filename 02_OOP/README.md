@@ -64,12 +64,12 @@ AbstractClass
 
 Первый интерфейс
 ``` java
-public interface I {
+public interface I1 {
     void m1();
 }
 ```
 
-[src/main/java/multi/I.java](src/main/java/multi/I.java)
+[src/main/java/multi/I1.java](src/main/java/multi/I1.java)
 
 ``` java
     // Без модификатора

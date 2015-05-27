@@ -29,6 +29,7 @@ public class MyClassTest {
     @Test // Аннотация (начиная с JUnit4)
     // указывает что это тест
     public void simplest() {
+        // assertEquals(expected, actual)
         // assertEquals(message, expected, actual)
         assertEquals("Дважды два четыре", 4, 2 * 2);
         // Действительные числа сравниваются с погрешностью
@@ -38,7 +39,7 @@ public class MyClassTest {
         // Конкатенация строк
         assertEquals("test123", "test" + "123");
         // Сравнение массивов
-        assertArrayEquals(new byte[]{1, 2, 3}, new byte[]{1, 2, 3});
+        assertArrayEquals(new byte[]{1, 2, 3}, new byte[]{0 + 1, 2, 3});
     }
     //<--
 
@@ -46,9 +47,9 @@ public class MyClassTest {
     //-->
     @Test
     public void factorial() {
-        assertEquals(1, MyClass.fact(1));
+        assertEquals("1! = ", 1, MyClass.fact(1));
         assertEquals(2, MyClass.fact(2));
-        assertEquals(2 * 3, MyClass.fact(3));
+        assertEquals(6, MyClass.fact(3));
         assertEquals(2 * 3 * 4, MyClass.fact(4));
         assertEquals(2 * 3 * 4 * 5, MyClass.fact(5));
         assertEquals(2 * 3 * 4 * 5 * 6, MyClass.fact(6));

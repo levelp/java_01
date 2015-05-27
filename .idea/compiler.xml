@@ -23,29 +23,71 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="00_HelloWorld" />
-        <module name="01_HelloWorld" />
-        <module name="02_OOP" />
-        <module name="03_ModifiersDemo" />
         <module name="03_OOP" />
-        <module name="04_JUnit" />
         <module name="05_SquareEq" />
         <module name="06_DateDemo" />
         <module name="07_ArcSin" />
         <module name="08_ConsoleDemo" />
         <module name="09_SwingApplication" />
         <module name="10_ReadTextDemo" />
-        <module name="12_IntegrationTesting" />
         <module name="99_ResumeModel" />
-        <module name="HW_ResumeModel" />
         <module name="ModifiersDemo" />
         <module name="SwingApplication" />
         <module name="TaskModel" />
+      </profile>
+      <profile default="false" name="Annotation profile for 04_JUnit" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="04_JUnit" />
+      </profile>
+      <profile default="false" name="Annotation profile for HW_ResumeModel" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="HW_ResumeModel" />
+      </profile>
+      <profile default="false" name="Annotation profile for 01_HelloWorld" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="01_HelloWorld" />
+      </profile>
+      <profile default="false" name="Annotation profile for 02_OOP" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="02_OOP" />
+      </profile>
+      <profile default="false" name="Annotation profile for 12_IntegrationTesting" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="12_IntegrationTesting" />
+      </profile>
+      <profile default="false" name="Annotation profile for TasksModel" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="TasksModel" />
+      </profile>
+      <profile default="false" name="Annotation profile for 03_ModifiersDemo" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="03_ModifiersDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01_HelloWorld" target="1.7" />
-      <module name="02_OOP" target="1.7" />
+      <module name="02_OOP" target="1.8" />
       <module name="03_ModifiersDemo" target="1.7" />
       <module name="04_JUnit" target="1.7" />
       <module name="05_SquareEq" target="1.5" />

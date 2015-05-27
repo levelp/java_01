@@ -60,6 +60,8 @@ public class A_PrimitiveTypes {
         // 4. 64-битное целое **long**
         long l = 2147483648L; // 64-битное целое
         System.out.println("l = " + l);
+        long l2 = 10000000000L;
+        System.out.println("l2 = " + l2);
 
         byte b1 = (byte) 0xff;
         System.out.println("b1 = " + b1);
@@ -128,10 +130,10 @@ public class A_PrimitiveTypes {
         System.out.println("a = " + a);
         // Условный оператор **if**
         //-->
-        if (a > 1) { // Когда условие истинно
+        if (a > 1 && a < 10) { // Когда условие истинно
             System.out.println("a большая :)");
         } else { // в противоположном случае
-            System.out.println("a маленькая :)");
+            System.out.println("a маленькая или очень большая");
         }
         //<--
 
@@ -175,10 +177,10 @@ public class A_PrimitiveTypes {
         a++; // Постфиксная форма
         System.out.println("a = " + a);
         a = 2;
-        int aa = a++; // aa = 2
+        int aa = a++ + a++; // aa = 4
         System.out.println("aa = " + aa);
         // a = 3
-        int a1 = ++a; // a1 = 4, a = 4
+        int a1 = ++a;
         System.out.println("a1 = " + a1);
         ++a; // Префиксная форма
         // Декремент

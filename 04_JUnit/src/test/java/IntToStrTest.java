@@ -87,7 +87,8 @@ public class IntToStrTest extends Assert {
         assertEquals("Пять тысяч", intToStr(5000));
         assertEquals("Десять тысяч", intToStr(10000));
         assertEquals("Двадцать тысяч", intToStr(20000));
-        assertEquals("Девяносто девять тысяч девятьсот девяносто девять", intToStr(99999));
+        assertEquals("Девяносто девять тысяч девятьсот девяносто девять",
+                intToStr(99999));
         assertEquals("Девяносто девять тысяч девятьсот двенадцать", intToStr(99912));
         assertEquals("Девятьсот двадцать тысяч девятьсот двенадцать", intToStr(920912));
         assertEquals("Девятьсот одиннадцать тысяч девятьсот двенадцать", intToStr(911912));

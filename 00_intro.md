@@ -235,6 +235,7 @@ http://openjdk.java.net/jeps/200
 
 Установка и настройка IntelliJ IDEA, создание проекта
 -----------------------------------------------------
+* http://habrahabr.ru/post/112749/ - Почему IDEA лучше Eclipse
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
 * Указать **JDK** в настройках проекта (обычно каталог:
 **C:\Program Files\Java\jdk1.8.0_20**).

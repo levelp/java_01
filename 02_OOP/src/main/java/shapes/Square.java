@@ -1,6 +1,6 @@
 package shapes;
 
-import static java.lang.Math.pow;
+import static java.lang.Math.*;
 
 /**
  * Квадрат
