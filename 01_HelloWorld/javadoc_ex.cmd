@@ -1,0 +1,1 @@
+javadoc -classpath %JAVA_HOME%/lib/tools.jar -sourcepath ./ -d ./doc package2

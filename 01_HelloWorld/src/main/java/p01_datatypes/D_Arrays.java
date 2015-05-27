@@ -1,7 +1,7 @@
 package p01_datatypes;
 
-// Массивы
-// -------
+// Массивы: foreach, многомерные
+// -----------------------------
 public class D_Arrays {
     public static void main(String[] args) {
         //-->
@@ -31,7 +31,7 @@ public class D_Arrays {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        int x = array2D[0][0]; // Элемент массива с индексом 0 0
+        int x = array2D[0][1]; // Элемент массива с индексом 0 1
         array2D[1][1] = 231; // Новое значение
         //<--
     }

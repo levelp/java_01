@@ -3,22 +3,16 @@ package shapes;
 /**
  * Фигура (интерфейс)
  */
-public class Shape {
+public abstract class Shape {
     String name;
 
     /**
      * @return Вывести строчку презентации
      */
-    public String show() {
-        System.out.println("Надо реализовать метод show()");
-        return name;
-    }
+    abstract public String show();
 
     /**
      * @return Площадь фигуры
      */
-    public double area() {
-        System.out.println("Надо реализовать метод area()");
-        return 0;
-    }
+    abstract public double area();
 }

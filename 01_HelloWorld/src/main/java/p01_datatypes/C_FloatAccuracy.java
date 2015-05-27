@@ -10,7 +10,7 @@ public class C_FloatAccuracy {
         double b = 0.6;
         double c = 0.9;
         // Корректная проверка что a + b == c
-        if (Math.abs(c - (a + b)) < 0.00000000001) {
+        if  (Math.abs(a + b - c) < 1e-15) {
             System.out.println("Равно");
         } else {
             System.out.println("Не равно!");

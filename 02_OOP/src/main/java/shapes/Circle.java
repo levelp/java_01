@@ -7,6 +7,9 @@ import static java.lang.Math.pow;
  * Круг
  */
 public class Circle extends Shape {
+    /**
+     * Радиус
+     */
     private double r;
 
     /**
