@@ -158,10 +158,10 @@ public class Main {
 И это лучше чем в транслите
 Условный оператор **if**
 ``` java
-        if (a > 1) { // Когда условие истинно
+        if (a > 1 && a < 10) { // Когда условие истинно
             System.out.println("a большая :)");
         } else { // в противоположном случае
-            System.out.println("a маленькая :)");
+            System.out.println("a маленькая или очень большая");
         }
 ```
 
@@ -190,10 +190,10 @@ public class Main {
         a++; // Постфиксная форма
         System.out.println("a = " + a);
         a = 2;
-        int aa = a++; // aa = 2
+        int aa = a++ + a++; // aa = 4
         System.out.println("aa = " + aa);
         // a = 3
-        int a1 = ++a; // a1 = 4, a = 4
+        int a1 = ++a;
         System.out.println("a1 = " + a1);
         ++a; // Префиксная форма
         // Декремент
@@ -234,7 +234,7 @@ public class Main {
         double b = 0.6;
         double c = 0.9;
         // Корректная проверка что a + b == c
-        if (Math.abs(c - (a + b)) < 0.00000000001) {
+        if  (Math.abs(a + b - c) < 1e-15) {
             System.out.println("Равно");
         } else {
             System.out.println("Не равно!");
@@ -274,7 +274,7 @@ public class Main {
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        int x = array2D[0][0]; // Элемент массива с индексом 0 0
+        int x = array2D[0][1]; // Элемент массива с индексом 0 1
         array2D[1][1] = 231; // Новое значение
 ```
 
@@ -287,21 +287,27 @@ i примитивного типа - передаётся по значению
 ``` java
         int i = 10;
         assertEquals("Перед вызовом method1", 10, i);
+        System.out.println("Перед вызовом method1 i = " + i);
         method1(i);
         assertEquals("После вызова method1", 10, i);
+        System.out.println("После вызова method1 i = " + i);
 ```
 
 ``` java
         MyClass object = new MyClass();
         object.i = 10;
+        assertEquals("Перед вызовом method2", 10, object.i);
+        System.out.println("Перед вызовом method2 object.i = " + object.i);
         myMethod2(object);
         assertEquals("После вызова myMethod2", 30, object.i);
+        System.out.println("После вызова method2 object.i = " + object.i);
 ```
 
 i значение копируется
 ``` java
     static void method1(int i) {
         i += 20;
+        System.out.println("method1: i = " + i);
         assertEquals("method1: ", 30, i);
     }
 ```
@@ -491,8 +497,13 @@ double D = b * b - 4 * a * c;
 
 [src/main/java/p02_cycles/Cycles.java](src/main/java/p02_cycles/Cycles.java)
 
+<<<<<<< HEAD
+Markdown файл
+=============
+=======
 Использование Markdown-разметки для документации
 ------------------------------------------------
+>>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
 Перевод строки на разных платформах
 -----------------------------------
@@ -544,7 +555,4 @@ Returns the char value at the specified index
     }
 }
 [src/test/java/p01_datatypes/StringTest.java](src/test/java/p01_datatypes/StringTest.java)
-
-Использование Markdown-разметки для документации
-------------------------------------------------
 

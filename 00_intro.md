@@ -24,8 +24,10 @@ TODO:
 * http://vk.com/java_course - группа для участников курса
 * http://levelp.ru/courses/programmirovanie/java-junior-developer/ - 
 курс Java Junior Developer на сайте LevelUp
-* http://levelp.ru/courses/programmirovanie/basics-of-programming-java/ - 
-курс "Основы программирования и алгоритмизации на языке Java" на на сайте LevelUp
+* http://levelp.ru/courses/programmirovanie/basics-of-programming-in-the-java-language-level-1/ - 
+курс "Основы программирования на языке Java. Уровень 1" на на сайте LevelUp
+* http://levelp.ru/courses/programmirovanie/basics-of-programming-in-the-java-language-level-2/ - 
+курс "Основы программирования на языке Java. Уровень 2" на на сайте LevelUp
 * http://javarush.ru - курс Java для начинающих (http://info.javarush.ru/page/learning_plan/ - план обучения)
 * http://www.intuit.ru/studies/courses/16/16/info - "Программирование на Java" курс лекций на ИНТУИТ
 * http://levelp.ru/knowledge-base/ - форум на сайте LevelUp (задавать вопросы по д.з.)

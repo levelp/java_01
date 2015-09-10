@@ -56,20 +56,21 @@ myClass.privateField - нет доступа
 super(); // Вызываем конструктор суперкласса
 [src/main/java/inheritance/SubClass.java](src/main/java/inheritance/SubClass.java)
 
-public int a;
-[src/main/java/multi/B.java](src/main/java/multi/B.java)
-
-AbstractClass
-[src/main/java/multi/Demo.java](src/main/java/multi/Demo.java)
-
+B - наследник A
 Первый интерфейс
 ``` java
-public interface I1 {
-    void m1();
-}
+    public interface I1 {
+        void m1();
+    }
 ```
 
-[src/main/java/multi/I1.java](src/main/java/multi/I1.java)
+A
+/ \
+B C
+\ /
+D
+AbstractClass
+[src/main/java/multi/Demo.java](src/main/java/multi/Demo.java)
 
 ``` java
     // Без модификатора
