@@ -17,11 +17,13 @@ public class A_PrimitiveTypes {
         // Подробнее: http://ru.wikipedia.org/wiki/Дополнительный_код_(представление_числа)
         byte varWithoutValue;
         varWithoutValue = 3; // Значение присваиваем позже
-        varWithoutValue = (byte) (varWithoutValue + 2);
+        varWithoutValue = (byte) (varWithoutValue + 255);
         System.out.println("varWithoutValue = " + varWithoutValue);
 
         byte b = -128; // -128..127
         System.out.println("b = " + b);
+        System.out.println("Byte.MIN_VALUE = " + Byte.MIN_VALUE);
+        System.out.println("Byte.MAX_VALUE = " + Byte.MAX_VALUE);
         //
         // | Двоичное  |Дополнительный код | Байт |
         // |-----------|:-----------------:|:----:|
@@ -92,6 +94,8 @@ public class A_PrimitiveTypes {
         // 5. **float** - 4 байта
         float floatValue = 1.0f;
         System.out.printf("floatValue = %f%n", floatValue);
+        System.out.println("Float.MIN_VALUE = " + Float.MIN_VALUE);
+        System.out.println("Float.MAX_VALUE = " + Float.MAX_VALUE);
 
         // 6. **double** - 8 байт
         double doubleValue = 1123.22 * 1.0 / 2.3;
@@ -99,7 +103,7 @@ public class A_PrimitiveTypes {
         System.out.println(Double.MIN_VALUE + ".." +
                 Double.MAX_VALUE);
 
-        // 7. Логический тип
+        // 7. Логический тип: true / false
         Random random = new Random();
         boolean bool = random.nextBoolean();
         boolean bool2 = random.nextBoolean();
@@ -107,14 +111,17 @@ public class A_PrimitiveTypes {
         System.out.printf("bool3 = %s%n", bool3);
 
         //
+        // true / false
         // && - логическое И
         // || - логическое ИЛИ
         boolean bool4 = !bool; // ! - логическое НЕ
         System.out.println("bool4 = " + bool4);
+        // Boolean
 
         // 8. Символьный тип **char**
         char c1 = 'П', c2 = 'Р', c3 = 'И', c4 = 'В', c5 = 'Е', c6 = 'Т';
         System.out.println(c1 + c2 + c3 + c4 + c5 + c6);
+        // Character
 
         //
         // Переменные, методы, классы можно
@@ -172,9 +179,13 @@ public class A_PrimitiveTypes {
         // Деление
         a = a / 2;
         a /= 2;
+        // Взять по модулю
+        a = a % 5;
+        a %= 5;
         // Инкремент
         a = a + 1;
         a++; // Постфиксная форма
+        ++a; // Префиксная форма
         System.out.println("a = " + a);
         a = 2;
         int aa = a++ + a++; // aa = 4

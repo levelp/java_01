@@ -1,5 +1,6 @@
 package p01_datatypes;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 import static java.lang.Math.*;
@@ -9,6 +10,7 @@ import static java.lang.Math.*;
 //
 public class Z_SquareEq {
     public static void main(String args[]) {
+        Locale.setDefault(Locale.US);
         // Считываем коэффициенты с клавиатуры
         //-->
         double a, b, c;

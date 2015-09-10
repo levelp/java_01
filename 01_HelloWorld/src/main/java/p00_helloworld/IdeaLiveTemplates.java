@@ -9,6 +9,7 @@ public class IdeaLiveTemplates {
     public static void main(String[] args) {
         // sout
         System.out.println();
+        System.out.println("Hello world!");
         // soutv - + вывести значение последней переменной
         int i = 10;
         System.out.println("i = " + i);

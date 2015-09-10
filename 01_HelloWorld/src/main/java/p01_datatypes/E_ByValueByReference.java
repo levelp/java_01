@@ -11,6 +11,9 @@ public class E_ByValueByReference {
         // i примитивного типа - передаётся по значению
         //-->
         int i = 10;
+        // Integer
+        Integer ii = i; // Boxing
+        int iii = ii; // Unboxing
         assertEquals("Перед вызовом method1", 10, i);
         System.out.println("Перед вызовом method1 i = " + i);
         method1(i);
@@ -41,6 +44,7 @@ public class E_ByValueByReference {
     // i передаётся по ссылке
     //-->
     static void myMethod2(MyClass i) {
+        //i = new MyClass();
         i.i += 20;
         assertEquals("myMethod2: ", 30, i.i);
     }
