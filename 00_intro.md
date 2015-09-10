@@ -48,6 +48,8 @@ http://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601
 * Книга: Экстремальное программирование: разработка через тестирование
 http://www.booksgid.com/programmer/4686-jekstremalnoe-programmirovanie.html
 * Джошуа Блох "Java. Эффективное программирование" http://www.ozon.ru/context/detail/id/21724143/
+*
+
 TODO: Навести порядок в книгах
 + добавить ссылку на группу в альбом с внешним видом
 
