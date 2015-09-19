@@ -21,3 +21,6 @@
 
 [src/main/java/Resume.java](src/main/java/Resume.java)
 
+@Test
+[src/test/java/ResumeTest.java](src/test/java/ResumeTest.java)
+

@@ -54,6 +54,7 @@ cout << "Hello, world!" << endl; // C++
     public static void main(String[] args) {
         // sout
         System.out.println();
+        System.out.println("Hello world!");
         // soutv - + вывести значение последней переменной
         int i = 10;
         System.out.println("i = " + i);
@@ -147,11 +148,14 @@ public class Main {
 Вещественные типы (действительные)
 5. **float** - 4 байта
 6. **double** - 8 байт
-7. Логический тип
+7. Логический тип: true / false
 
+true / false
 && - логическое И
 || - логическое ИЛИ
+Boolean
 8. Символьный тип **char**
+Character
 
 Переменные, методы, классы можно
 называть по-русски, имена в кодировке Unicode
@@ -185,9 +189,13 @@ public class Main {
         // Деление
         a = a / 2;
         a /= 2;
+        // Взять по модулю
+        a = a % 5;
+        a %= 5;
         // Инкремент
         a = a + 1;
         a++; // Постфиксная форма
+        ++a; // Префиксная форма
         System.out.println("a = " + a);
         a = 2;
         int aa = a++ + a++; // aa = 4
@@ -286,6 +294,9 @@ public class Main {
 i примитивного типа - передаётся по значению
 ``` java
         int i = 10;
+        // Integer
+        Integer ii = i; // Boxing
+        int iii = ii; // Unboxing
         assertEquals("Перед вызовом method1", 10, i);
         System.out.println("Перед вызовом method1 i = " + i);
         method1(i);
@@ -315,6 +326,7 @@ i значение копируется
 i передаётся по ссылке
 ``` java
     static void myMethod2(MyClass i) {
+        //i = new MyClass();
         i.i += 20;
         assertEquals("myMethod2: ", 30, i.i);
     }
