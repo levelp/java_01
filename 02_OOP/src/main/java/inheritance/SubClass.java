@@ -4,7 +4,7 @@ public class SubClass extends SuperClass {
 
     public SubClass() {
         //super(); // Вызываем конструктор суперкласса
-        System.out.println("Подкласс");
+        System.out.println("Конструктор Подкласса");
     }
 
     public static void main(String[] args) {

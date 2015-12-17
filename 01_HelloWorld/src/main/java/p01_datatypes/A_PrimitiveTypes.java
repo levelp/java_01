@@ -14,7 +14,8 @@ public class A_PrimitiveTypes {
 
         // **Целочисленные типы:**
         //  1. 8 битное целое - **byte**: -128..127.
-        // Подробнее: http://ru.wikipedia.org/wiki/Дополнительный_код_(представление_числа)
+        // Подробнее:
+        // http://ru.wikipedia.org/wiki/Дополнительный_код_(представление_числа)
         byte varWithoutValue;
         varWithoutValue = 3; // Значение присваиваем позже
         varWithoutValue = (byte) (varWithoutValue + 255);
@@ -42,7 +43,8 @@ public class A_PrimitiveTypes {
         // 2. 16-битное целое **short**: -2^15..2^15-1  -32768..32767
         //-->
         short sh = 32767; // -32768..32767
-        System.out.println("short = " + sh + " " + Short.MIN_VALUE + ".." + Short.MAX_VALUE);
+        System.out.println("short = " + sh + " " +
+                Short.MIN_VALUE + ".." + Short.MAX_VALUE);
         //<--
 
         // 3. 32-битное целое **int**
@@ -51,12 +53,16 @@ public class A_PrimitiveTypes {
         System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
         // Java6
         int intBin = Integer.parseInt("1011", 2);
-        System.out.println("intBin = " + Integer.toBinaryString(intBin));
+        System.out.println("intBin = " +
+                Integer.toBinaryString(intBin));
         int integerHex = 0xFFA9; // Шестнадцатеричная система счисления
+        System.out.printf("Hex: %X %n", integerHex); // FFA9
+        System.out.printf("Hex: %x %n", integerHex); // ffa9
         System.out.printf("Hex: %04X %n", integerHex);
         // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
         int maxInt = 2147483647; // 2^31-1
         System.out.printf("maxInt = %08X %n", maxInt);
+        System.out.println("Integer.MAX_VALUE = " + Integer.MAX_VALUE);
         //<--
 
         // 4. 64-битное целое **long**
@@ -92,7 +98,9 @@ public class A_PrimitiveTypes {
 
         // Вещественные типы (действительные)
         // 5. **float** - 4 байта
-        float floatValue = 1.0f;
+        float floatValue = 2.3f;
+        System.out.printf("floatValue = %f%n", floatValue);
+        floatValue = 1.0f;
         System.out.printf("floatValue = %f%n", floatValue);
         System.out.println("Float.MIN_VALUE = " + Float.MIN_VALUE);
         System.out.println("Float.MAX_VALUE = " + Float.MAX_VALUE);
@@ -108,6 +116,7 @@ public class A_PrimitiveTypes {
         boolean bool = random.nextBoolean();
         boolean bool2 = random.nextBoolean();
         boolean bool3 = bool && bool2;
+        // && - И  || - ИЛИ
         System.out.printf("bool3 = %s%n", bool3);
 
         //
@@ -119,9 +128,10 @@ public class A_PrimitiveTypes {
         // Boolean
 
         // 8. Символьный тип **char**
-        char c1 = 'П', c2 = 'Р', c3 = 'И', c4 = 'В', c5 = 'Е', c6 = 'Т';
+        char c1 = 'П', c2 = 'Р', c3 = 'И',
+                c4 = 'В', c5 = 'Е', c6 = 'Т';
         System.out.println(c1 + c2 + c3 + c4 + c5 + c6);
-        // Character
+        Character сClass = c1;
 
         //
         // Переменные, методы, классы можно
@@ -190,7 +200,6 @@ public class A_PrimitiveTypes {
         a = 2;
         int aa = a++ + a++; // aa = 4
         System.out.println("aa = " + aa);
-        // a = 3
         int a1 = ++a;
         System.out.println("a1 = " + a1);
         ++a; // Префиксная форма

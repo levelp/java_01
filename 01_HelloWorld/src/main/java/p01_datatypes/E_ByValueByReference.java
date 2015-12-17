@@ -44,7 +44,7 @@ public class E_ByValueByReference {
     // i передаётся по ссылке
     //-->
     static void myMethod2(MyClass i) {
-        //i = new MyClass();
+        // i = new MyClass();
         i.i += 20;
         assertEquals("myMethod2: ", 30, i.i);
     }
