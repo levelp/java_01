@@ -38,8 +38,8 @@ public class SquareEq {
         // Если D > 0 => 2 решения
         if (D > 0) {
             return new double[]{
-                    (-b - sqrt(D) / (2 * a)),
-                    (-b + sqrt(D) / (2 * a))
+                    (-b - sqrt(D)) / (2 * a),
+                    (-b + sqrt(D)) / (2 * a)
             };
         }
         // Нет решений

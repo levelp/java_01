@@ -33,6 +33,17 @@ public class SquareEqTest {
                 new double[]{-2.0, 2.0},
                 SquareEq.solve(1.0, 0.0, -4.0), DELTA);
     }
+
+    /**
+     * Отдельный тест когда b != 0
+     */
+    @Test
+    public void twoSolutionsBNotNull() {
+        // (x-1)(x-2) = x^2 - 3x + 2
+        assertArrayEquals("x^2 - 3x + 2 = 0",
+                new double[]{1.0, 2.0},
+                SquareEq.solve(1.0, -3.0, 2.0), DELTA);
+    }
     //<--
 
     /**
