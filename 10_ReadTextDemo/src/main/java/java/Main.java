@@ -1,4 +1,4 @@
-package com.company;
+package java;
 
 import javax.swing.*;
 import java.nio.file.Files;

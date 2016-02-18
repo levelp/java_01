@@ -10,7 +10,8 @@ import java.util.Scanner;
  */
 public class MyClass {
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
 
         // Открываем файл
         File poDrugomu; // File - тип переменной, poDrugomu - имя
@@ -25,7 +26,7 @@ public class MyClass {
 //        System.out.println("Загадайте животное, я буду угадывать животное, задавать вам вопросы");
         // Программа угадывает жив
 
-        List<Animal> list = new ArrayList<Animal>();
+        List<Animal> list = new ArrayList<>();
 
         while (s.hasNextLine()) {
             // Создаём новое животное
@@ -53,7 +54,7 @@ public class MyClass {
         // Составили список из 4-х животных
         // Одно задуманное (верное)
         // И ещё 3 случайных
-        List<Animal> choice = new ArrayList<Animal>();
+        List<Animal> choice = new ArrayList<>();
         choice.add(rightAnimal);
         list.remove(rightAnimal);
 

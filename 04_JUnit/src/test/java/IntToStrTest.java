@@ -13,7 +13,8 @@ import static util.IntToStr.intToStr;
 // * $2 - второй параметр и т.д.
 public class IntToStrTest extends Assert {
 
-    @Test
+    @Test // JUnit4+
+    // testTestCaseName
     public void testIntToStrBefore100() {
         assertEquals("Ноль", intToStr(0));
         assertEquals("Один", intToStr(1));

@@ -61,7 +61,7 @@ public class SquareEqTest {
      * у которых нет решений в действ. числах
      */
     @Test
-    public void noSolutions() {
+    public void testNoSolutions() {
         assertArrayEquals("x^2 + 1 = 0",
                 new double[]{},
                 SquareEq.solve(1.0, 0.0, 1.0), DELTA);
@@ -76,7 +76,7 @@ public class SquareEqTest {
      * Квадратное уравнение превращается в линейное
      */
     @Test
-    public void zeroA() {
+    public void testZeroA() {
         assertArrayEquals("2x + 1 = 0",
                 new double[]{-0.5},
                 SquareEq.solve(0.0, 2.0, 1.0), DELTA);
@@ -89,7 +89,7 @@ public class SquareEqTest {
     // Тестируем вырожденный случай: a = 0, b = 0
     //-->
     @Test
-    public void zeroAZeroB() {
+    public void testZeroAZeroB() {
         assertArrayEquals("1 = 0",
                 new double[]{},
                 SquareEq.solve(0.0, 0.0, 1.0), DELTA);
@@ -100,7 +100,7 @@ public class SquareEqTest {
     // Ожидаемое исключение
     //-->
     @Test(expected = AnyXException.class)
-    public void zeroAZeroBZeroC() {
+    public void testZeroAZeroBZeroC() {
         assertArrayEquals("0 = 0",
                 new double[]{},
                 SquareEq.solve(0.0, 0.0, 0.0), DELTA);

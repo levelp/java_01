@@ -16,7 +16,9 @@ public class E_ByValueByReference {
         int iii = ii; // Unboxing
         assertEquals("Перед вызовом method1", 10, i);
         System.out.println("Перед вызовом method1 i = " + i);
+
         method1(i);
+
         assertEquals("После вызова method1", 10, i);
         System.out.println("После вызова method1 i = " + i);
         //<--
@@ -26,7 +28,9 @@ public class E_ByValueByReference {
         object.i = 10;
         assertEquals("Перед вызовом method2", 10, object.i);
         System.out.println("Перед вызовом method2 object.i = " + object.i);
+
         myMethod2(object);
+
         assertEquals("После вызова myMethod2", 30, object.i);
         System.out.println("После вызова method2 object.i = " + object.i);
         //<--
@@ -44,7 +48,7 @@ public class E_ByValueByReference {
     // i передаётся по ссылке
     //-->
     static void myMethod2(MyClass i) {
-        // i = new MyClass();
+        //i = new MyClass();
         i.i += 20;
         assertEquals("myMethod2: ", 30, i.i);
     }

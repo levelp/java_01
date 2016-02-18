@@ -27,8 +27,10 @@ public class I_Printf {
         System.out.println("%n TTH %n");
 
         // В шестнадцатеричном виде
+        // af3d
         System.out.printf("%x\n", 2014);
 
+        // AF3D
         System.out.printf("%X\n", 2014);
         System.out.printf("%04X\n", 2014);
 

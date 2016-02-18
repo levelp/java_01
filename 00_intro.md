@@ -6,7 +6,8 @@ TODO:
 * Зарегистироваться на github.com
 * Подать заявку на вступление в: https://github.com/levelp
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition 
+* Зарегистироваться на https://account.jetbrains.com/login
 * https://meet93023175.adobeconnect.com - вебинар
 
 Знакомство
@@ -41,14 +42,13 @@ TODO:
 * Thinking in Java (Философия Java) Брюс Эккель: http://www.bookvoed.ru/book?id=422984
 * Искусство программирования на Java, Герберт Шилдт, Джеймс Холмс: http://www.bookvoed.ru/book?id=3483133
 * Java EE 7. Основы, Гупта А.: http://www.bookvoed.ru/book?id=6093759
-* Effective Java, автор Joshua Bloch. 
+* Effective Java, автор Joshua Bloch (Джошуа Блох) - http://www.ozon.ru/context/detail/id/1259354/
 * Программист Прагматик (The Pragmatic Programmer) - подробно раскрыты общие методики программирования (книга похожа на сборник полезных советов)
 * Java concurrency in practice. - Многопоточность в Java.
 http://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601
 * Книга: Экстремальное программирование: разработка через тестирование
 http://www.booksgid.com/programmer/4686-jekstremalnoe-programmirovanie.html
 * Джошуа Блох "Java. Эффективное программирование" http://www.ozon.ru/context/detail/id/21724143/
-*
 
 TODO: Навести порядок в книгах
 + добавить ссылку на группу в альбом с внешним видом
@@ -56,7 +56,8 @@ TODO: Навести порядок в книгах
 Скачивание, установка и настройка Java
 --------------------------------------
 * Скачать Java SE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition 
+* Зарегистироваться на https://account.jetbrains.com/login
 * Скачать Java-plugin (выполнение Java-апплетов, Java Web Start): https://java.com/ru/download
 
 * Для удобства нужно задать переменную окружения JAVA_HOME - путь к Java, например: C:\Program Files\Java\jdk1.8.0_20
@@ -84,10 +85,8 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 
 Что такое Java? История создания
 --------------------------------
-
-История Java восходит к 1991 году, когда группа инженеров из компании Sun под руководством Патрика Нотона (Patrick Naughton) 
-и члена Совета директоров (и разностороннего компьютерного волшебника) 
-Джеймса Гослинга (James Gosling) занялась разработкой небольшого языка, 
+История Java началась в 1991 году, когда группа инженеров из компании Sun под руководством Патрика Нотона (Patrick Naughton) 
+и члена Совета директоров Джеймса Гослинга (James Gosling) занялась разработкой небольшого языка, 
 который можно было бы использовать для программирования бытовых устройств, например, 
 контроллеров для переключения каналов кабельного телевидения (cable TV switchboxes).
 
@@ -147,8 +146,6 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 
 Честно говоря, версия Java 1.02 была еще сырой. Ее преемница, версия Java 1.1, заполнила большинство зияющих провалов, намного улучшив возможность отражения и добавив новую модель событий для программирования графического пользовательского интерфейса. Несмотря на это, она все еще была довольно ограниченной.
 
- 
-
 Выпуск версии Java 1.2 стал основной новостью конференции JavaOne в 1998 году. 
 В новой версии слабые средства для создания графического пользовательского интерфейса и графических приложений были заменены сложным и масштабным инструментарием. Это был шаг вперед, к реализации лозунга "Write Once, Run Anywhere" ™ ("Один раз напиши— и везде выполняй"), выдвинутого при разработке предыдущих версий.
 
@@ -160,7 +157,9 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 
 Версии 1.3 и 1.4 стандартного издания пакета инструментальных средств 
 намного совершеннее первоначального выпуска языка Java 2. 
-Они обладают новыми возможностями и, разумеется, содержат намного меньше ошибок. 
+Они обладают новыми возможностями и, разумеется, содержат намного меньше ошибок.
+ 
+ 
 
 Платформа Java. JVM, сборка мусора, оптимизация, прогрев. JDK, JRE
 ------------------------------------------------------------------
