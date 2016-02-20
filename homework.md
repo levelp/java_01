@@ -1,7 +1,7 @@
 ﻿Домашнее задание
 -----------------
 
-* Регистрация adobeConnect
+* Регистрация в adobeConnect
 * Зарегистироваться на github.com 
 * Отправить свой логин на почту: stden@mail.ru 
 Я добавлю вас в группу: https://github.com/levelp

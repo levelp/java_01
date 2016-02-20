@@ -7,7 +7,8 @@ TODO:
 * Зарегистироваться на github.com
 * Подать заявку на вступление в: https://github.com/levelp
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
+* Зарегистироваться на https://account.jetbrains.com/login
 * https://meet93023175.adobeconnect.com - вебинар
 
 Знакомство
@@ -25,8 +26,10 @@ TODO:
 * http://vk.com/java_course - группа для участников курса
 * http://levelp.ru/courses/programmirovanie/java-junior-developer/ -
 курс Java Junior Developer на сайте LevelUp
-* http://levelp.ru/courses/programmirovanie/basics-of-programming-java/ -
-курс "Основы программирования и алгоритмизации на языке Java" на на сайте LevelUp
+* http://levelp.ru/courses/programmirovanie/basics-of-programming-in-the-java-language-level-1/ -
+курс "Основы программирования на языке Java. Уровень 1" на на сайте LevelUp
+* http://levelp.ru/courses/programmirovanie/basics-of-programming-in-the-java-language-level-2/ -
+курс "Основы программирования на языке Java. Уровень 2" на на сайте LevelUp
 * http://javarush.ru - курс Java для начинающих (http://info.javarush.ru/page/learning_plan/ - план обучения)
 * http://www.intuit.ru/studies/courses/16/16/info - "Программирование на Java" курс лекций на ИНТУИТ
 * http://levelp.ru/knowledge-base/ - форум на сайте LevelUp (задавать вопросы по д.з.)
@@ -40,20 +43,22 @@ TODO:
 * Thinking in Java (Философия Java) Брюс Эккель: http://www.bookvoed.ru/book?id=422984
 * Искусство программирования на Java, Герберт Шилдт, Джеймс Холмс: http://www.bookvoed.ru/book?id=3483133
 * Java EE 7. Основы, Гупта А.: http://www.bookvoed.ru/book?id=6093759
-* Effective Java, автор Joshua Bloch.
+* Effective Java, автор Joshua Bloch (Джошуа Блох) - http://www.ozon.ru/context/detail/id/1259354/
 * Программист Прагматик (The Pragmatic Programmer) - подробно раскрыты общие методики программирования (книга похожа на сборник полезных советов)
 * Java concurrency in practice. - Многопоточность в Java.
 http://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601
 * Книга: Экстремальное программирование: разработка через тестирование
 http://www.booksgid.com/programmer/4686-jekstremalnoe-programmirovanie.html
 * Джошуа Блох "Java. Эффективное программирование" http://www.ozon.ru/context/detail/id/21724143/
+
 TODO: Навести порядок в книгах
 + добавить ссылку на группу в альбом с внешним видом
 
 Скачивание, установка и настройка Java
 --------------------------------------
 * Скачать Java SE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition + серийный номер
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
+* Зарегистироваться на https://account.jetbrains.com/login
 * Скачать Java-plugin (выполнение Java-апплетов, Java Web Start): https://java.com/ru/download
 
 * Для удобства нужно задать переменную окружения JAVA_HOME - путь к Java, например: C:\Program Files\Java\jdk1.8.0_20
@@ -81,10 +86,8 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 
 Что такое Java? История создания
 --------------------------------
-
-История Java восходит к 1991 году, когда группа инженеров из компании Sun под руководством Патрика Нотона (Patrick Naughton)
-и члена Совета директоров (и разностороннего компьютерного волшебника)
-Джеймса Гослинга (James Gosling) занялась разработкой небольшого языка,
+История Java началась в 1991 году, когда группа инженеров из компании Sun под руководством Патрика Нотона (Patrick Naughton)
+и члена Совета директоров Джеймса Гослинга (James Gosling) занялась разработкой небольшого языка,
 который можно было бы использовать для программирования бытовых устройств, например,
 контроллеров для переключения каналов кабельного телевидения (cable TV switchboxes).
 
@@ -144,8 +147,6 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 
 Честно говоря, версия Java 1.02 была еще сырой. Ее преемница, версия Java 1.1, заполнила большинство зияющих провалов, намного улучшив возможность отражения и добавив новую модель событий для программирования графического пользовательского интерфейса. Несмотря на это, она все еще была довольно ограниченной.
 
-
-
 Выпуск версии Java 1.2 стал основной новостью конференции JavaOne в 1998 году.
 В новой версии слабые средства для создания графического пользовательского интерфейса и графических приложений были заменены сложным и масштабным инструментарием. Это был шаг вперед, к реализации лозунга "Write Once, Run Anywhere" ™ ("Один раз напиши— и везде выполняй"), выдвинутого при разработке предыдущих версий.
 
@@ -158,6 +159,8 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 Версии 1.3 и 1.4 стандартного издания пакета инструментальных средств
 намного совершеннее первоначального выпуска языка Java 2.
 Они обладают новыми возможностями и, разумеется, содержат намного меньше ошибок.
+
+
 
 Платформа Java. JVM, сборка мусора, оптимизация, прогрев. JDK, JRE
 ------------------------------------------------------------------
@@ -315,8 +318,6 @@ Java->class->JVM. Первое приложение Hello World. Package
 
 + класс String
 
-Первая программа на Java (Hello World)
---------------------------------------
 ``` java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -329,24 +330,14 @@ public class HelloWorld {
 }
 ```
 
-Если вы изучали Pascal/Delphi:
-``` pas
-Writeln('Hello, world!');
-```
-C/С++:
-``` cpp
-printf("Hello, world!\n"); // С
-cout << "Hello, world!" << endl; // C++
-```
 [01_HelloWorld/src/main/java/p00_helloworld/HelloWorld.java](01_HelloWorld/src/main/java/p00_helloworld/HelloWorld.java)
 
-Шаблоны Idea для быстрого ввода кода: psvm, sout+v/m, fori...
--------------------------------------------------------------
 ``` java
     // Шаблон: psvm + <tab>
     public static void main(String[] args) {
         // sout
         System.out.println();
+        System.out.println("Hello world!");
         // soutv - + вывести значение последней переменной
         int i = 10;
         System.out.println("i = " + i);
@@ -356,6 +347,11 @@ cout << "Hello, world!" << endl; // C++
         // fori + <tab> - цикл по целочисленной переменной
         for (int j = 0; j < 10; j++) {
             System.out.println("j = " + j);
+        }
+        for (int j = 0; j < 10; j++) {
+            for (int k = 0; k < 10; k++) {
+                System.out.println(i * j);
+            }
         }
     }
 ```
@@ -379,77 +375,29 @@ public class Main {
 
 8 примитивных типов данных: byte, short, int, long, float, double, boolean, char
 --------------------------------------------------------------------------------
-**Целочисленные типы:**
-1. 8 битное целое - **byte**: -128..127.
-Подробнее: http://ru.wikipedia.org/wiki/Дополнительный_код_(представление_числа)
-
-| Двоичное  |Дополнительный код | Байт |
-|-----------|:-----------------:|:----:|
-| 00000000  |    0              |   0  |
-| 00000001  |    1              |   1  |
-| 00000010  |    2              |   2  |
-| 00000011  |    3              |   3  |
-| 00000100  |    4              |   4  |
-|  ...      |   ...             | ...  |
-| 01111111  |   127             | 127  |
-| 10000000  |   -128            | 128  |
-|  ...      |   ...             | ...  |
-| 11111111  |   -1              | 255  |
-
-2. 16-битное целое **short**: -2^15..2^15-1  -32768..32767
 ``` java
         short sh = 32767; // -32768..32767
-        System.out.println("short = " + sh + " " + Short.MIN_VALUE + ".." + Short.MAX_VALUE);
+        System.out.println("short = " + sh + " " +
+                Short.MIN_VALUE + ".." + Short.MAX_VALUE);
 ```
 
-3. 32-битное целое **int**
 ``` java
         int integerBinary = 0b10101010; // Начиная с Java7
         System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
         // Java6
         int intBin = Integer.parseInt("1011", 2);
-        System.out.println("intBin = " + Integer.toBinaryString(intBin));
+        System.out.println("intBin = " +
+                Integer.toBinaryString(intBin));
         int integerHex = 0xFFA9; // Шестнадцатеричная система счисления
+        System.out.printf("Hex: %X %n", integerHex); // FFA9
+        System.out.printf("Hex: %x %n", integerHex); // ffa9
         System.out.printf("Hex: %04X %n", integerHex);
         // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
         int maxInt = 2147483647; // 2^31-1
         System.out.printf("maxInt = %08X %n", maxInt);
+        System.out.println("Integer.MAX_VALUE = " + Integer.MAX_VALUE);
 ```
 
-4. 64-битное целое **long**
-
-& - побитовое И
-0011
-0101
-0001
-
-| - побитовое ИЛИ
-0011
-0101
-0111
-
-~ - побитовое НЕ
-01
-10
-
-^ - XOR - исключающее ИЛИ
-0011
-0101
-0110
-
-Вещественные типы (действительные)
-5. **float** - 4 байта
-6. **double** - 8 байт
-7. Логический тип
-
-&& - логическое И
-|| - логическое ИЛИ
-8. Символьный тип **char**
-
-Переменные, методы, классы можно
-называть по-русски, имена в кодировке Unicode
-И это лучше чем в транслите
-Условный оператор **if**
 ``` java
         if (a > 1 && a < 10) { // Когда условие истинно
             System.out.println("a большая :)");
@@ -458,13 +406,6 @@ public class Main {
         }
 ```
 
-Цикл с предусловием - While
-Цикл с постусловием - Repeat Until
-Цикл for
-Вывод аргументов командной строки
-
-Сокращённая форма: +=, -=..., инкремент/декремент, префиксный/постфиксный
--------------------------------------------------------------------------
 ``` java
         // Сложение
         a = a + 10;
@@ -478,14 +419,17 @@ public class Main {
         // Деление
         a = a / 2;
         a /= 2;
+        // Взять по модулю
+        a = a % 5;
+        a %= 5;
         // Инкремент
         a = a + 1;
         a++; // Постфиксная форма
+        ++a; // Префиксная форма
         System.out.println("a = " + a);
         a = 2;
         int aa = a++ + a++; // aa = 4
         System.out.println("aa = " + aa);
-        // a = 3
         int a1 = ++a;
         System.out.println("a1 = " + a1);
         ++a; // Префиксная форма
@@ -515,13 +459,6 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/B_if_else.java](01_HelloWorld/src/main/java/p01_datatypes/B_if_else.java)
 
-Проверяем что a+b = c в double
-Обработка погрешности
-Проверяем что a+b = c в float
-[01_HelloWorld/src/main/java/p01_datatypes/C2_FloatAccuracy.java](01_HelloWorld/src/main/java/p01_datatypes/C2_FloatAccuracy.java)
-
-Точность вычислений в действительных числах
--------------------------------------------
 ``` java
         double a = 0.3;
         double b = 0.6;
@@ -538,29 +475,29 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/C_FloatAccuracy.java](01_HelloWorld/src/main/java/p01_datatypes/C_FloatAccuracy.java)
 
-Массивы: foreach, многомерные
------------------------------
 ``` java
         // Инициализация
         int[] intArray1 = new int[]{1, 2, 3, 10};
 
         // Сокращённая форма инициализации
         int[] intArray2 = {1, 2, 3, 10};
+        // Массив
+        int[] intArray3 = new int[100];
 ```
 
-Пробегаем по всем элементам массива
 ``` java
         for (int i = 0; i < intArray2.length; i++) {
-            System.out.println("intArray2[" + i + "] = " + intArray1[i]);
+            System.out.println("intArray1[" + i + "] = " +
+                    intArray1[i]);
         }
-        // Если нам не важны индексы, то мы можем использовать цикл "foreach"
+        // Если нам не важны индексы,
+        // то мы можем использовать цикл "foreach"
         for (int i : intArray1) {
             System.out.print(i + " ");
         }
         System.out.println(); // Просто перевод строки
 ```
 
-Двухмерный массив
 ``` java
         int[][] array2D = {
                 {1, 2, 3},
@@ -573,15 +510,16 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/D_Arrays.java](01_HelloWorld/src/main/java/p01_datatypes/D_Arrays.java)
 
-
-Передача параметров по ссылке и значению
-----------------------------------------
-i примитивного типа - передаётся по значению
 ``` java
         int i = 10;
+        // Integer
+        Integer ii = i; // Boxing
+        int iii = ii; // Unboxing
         assertEquals("Перед вызовом method1", 10, i);
         System.out.println("Перед вызовом method1 i = " + i);
+
         method1(i);
+
         assertEquals("После вызова method1", 10, i);
         System.out.println("После вызова method1 i = " + i);
 ```
@@ -591,12 +529,13 @@ i примитивного типа - передаётся по значению
         object.i = 10;
         assertEquals("Перед вызовом method2", 10, object.i);
         System.out.println("Перед вызовом method2 object.i = " + object.i);
+
         myMethod2(object);
+
         assertEquals("После вызова myMethod2", 30, object.i);
         System.out.println("После вызова method2 object.i = " + object.i);
 ```
 
-i значение копируется
 ``` java
     static void method1(int i) {
         i += 20;
@@ -605,9 +544,9 @@ i значение копируется
     }
 ```
 
-i передаётся по ссылке
 ``` java
     static void myMethod2(MyClass i) {
+        //i = new MyClass();
         i.i += 20;
         assertEquals("myMethod2: ", 30, i.i);
     }
@@ -621,8 +560,6 @@ i передаётся по ссылке
 
 [01_HelloWorld/src/main/java/p01_datatypes/E_ByValueByReference.java](01_HelloWorld/src/main/java/p01_datatypes/E_ByValueByReference.java)
 
-Операции: арифметические, побитовые, логические
------------------------------------------------
 ``` java
         // 8 базовых (примитивных) типов
         // 4 целочисленных типа (знаковые)
@@ -643,8 +580,6 @@ i передаётся по ссылке
         myBoolean1 = false;
 ```
 
-Массивы
-Арифметические операции
 ``` java
         int c = a + b; // сложение
         //   - - вычитание
@@ -694,18 +629,6 @@ i передаётся по ссылке
 
 [01_HelloWorld/src/main/java/p01_datatypes/H_Operators.java](01_HelloWorld/src/main/java/p01_datatypes/H_Operators.java)
 
-%d - целые числа
-3 символа на каждое число
-В шестнадцатеричном виде
-Перевод
-Действительные числа
-
-[01_HelloWorld/src/main/java/p01_datatypes/I_Printf.java](01_HelloWorld/src/main/java/p01_datatypes/I_Printf.java)
-
-
-**Решение квадратного уравнения**
-
-Считываем коэффициенты с клавиатуры
 ``` java
         double a, b, c;
         Scanner s = new Scanner(System.in);
@@ -719,13 +642,10 @@ i передаётся по ссылке
         c = s.nextDouble();
 ```
 
-Вычисляем дискриминант:
-double D = b * b - 4 * a * c;
 ``` java
         double D = pow(b, 2) - 4 * a * c; // pow - power
 ```
 
-Теперь проверяем знак дискриминанта
 ``` java
         if (abs(D) < 1e-16) {
             double x = -b / (2 * a);
@@ -743,9 +663,6 @@ double D = b * b - 4 * a * c;
 
 [01_HelloWorld/src/main/java/p01_datatypes/Z_SquareEq.java](01_HelloWorld/src/main/java/p01_datatypes/Z_SquareEq.java)
 
-Циклы: while, do while, for
----------------------------
-Цикл с предусловием **while(условие) тело_цикла;**
 ``` java
         int N = 6;
         System.out.print("N = " + N + " = (inverse binary) = ");
@@ -756,7 +673,6 @@ double D = b * b - 4 * a * c;
         System.out.println();
 ```
 
-Цикл с постусловием **do { тело_цикла } while (условие);**
 ``` java
         int x = 1000;
         do {
@@ -765,7 +681,6 @@ double D = b * b - 4 * a * c;
         } while (x > 10);
 ```
 
-Цикл **for(инициализация; условие продолжения; после итерации)**
 ``` java
         System.out.println(" Таблица умножения ");
         System.out.println("===================");
@@ -793,38 +708,13 @@ double D = b * b - 4 * a * c;
 <<<<<<< HEAD
 Markdown файл
 =============
-
-
 =======
 Использование Markdown-разметки для документации
 ------------------------------------------------
 >>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
-Перевод строки на разных платформах
------------------------------------
-ASCII код 10 - LF - \n - перевод строки
-ASCII код 13 - CR - \r - возврат каретки
-MacOSX: 0 10 LF
-Windows: 0 13 CR + 1 10 LF
-MacOSX: 0 10 LF
-[01_HelloWorld/src/test/java/p01_datatypes/NewLineTest.java](01_HelloWorld/src/test/java/p01_datatypes/NewLineTest.java)
-
-
-Работа со строками
-------------------
-http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
-Подстрока
-Создание пустой строки
-Returns the char value at the specified index
-Сравнение строк
-Сравнение без учёта регистра
-Массив символов с символа по символ
-Замена символов
-Шаблоны
-Шаблон телефонного номера
 ```
 
-Сравнение строк
 ``` java
     @Test
     public void testStrEq() {
@@ -851,8 +741,13 @@ Returns the char value at the specified index
 }
 [01_HelloWorld/src/test/java/p01_datatypes/StringTest.java](01_HelloWorld/src/test/java/p01_datatypes/StringTest.java)
 
+<<<<<<< HEAD
+Markdown файл
+=============
+=======
 Использование Markdown-разметки для документации
 ------------------------------------------------
+>>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
 Основы объектно-ориентированного программирования: Класс. Экземпляр класса (объект)
 -----------------------------------------------------------------------------------
@@ -897,34 +792,12 @@ Java не поддерживает множественное наследова
 Вместо множественного наследования классов в Java есть множественное наследование интерфейсов,
 при котором, как утверждается, никаких проблем не возникает.
 
-Не может содержать реализации методов
-int implementation(){
-int i = 2;
-}
-Не может содержать полей
-int x;
-[02_OOP/src/main/java/MyInterface.java](02_OOP/src/main/java/MyInterface.java)
-
-myClass.privateField - нет доступа
-[02_OOP/src/main/java/Test1.java](02_OOP/src/main/java/Test1.java)
-
-super(); // Вызываем конструктор суперкласса
-[02_OOP/src/main/java/inheritance/SubClass.java](02_OOP/src/main/java/inheritance/SubClass.java)
-
-B - наследник A
-Первый интерфейс
 ``` java
     public interface I1 {
         void m1();
     }
 ```
 
-A
-/ \
-B C
-\ /
-D
-AbstractClass
 [02_OOP/src/main/java/multi/Demo.java](02_OOP/src/main/java/multi/Demo.java)
 
 ``` java
@@ -944,7 +817,6 @@ AbstractClass
 
 [02_OOP/src/main/java/n_public_private_protected/A.java](02_OOP/src/main/java/n_public_private_protected/A.java)
 
-Класс B - наследник класса A (в том же пакете)
 ``` java
 public class B extends A {
 
@@ -958,41 +830,6 @@ public class B extends A {
 ```
 
 [02_OOP/src/main/java/n_public_private_protected/B.java](02_OOP/src/main/java/n_public_private_protected/B.java)
-
-Пользовательский класс внутри того же пакета
-[02_OOP/src/main/java/n_public_private_protected/UserClassInSamePackage.java](02_OOP/src/main/java/n_public_private_protected/UserClassInSamePackage.java)
-
-a.withSubclasses = 10;
-System.out.println("a.withSubclasses = " + a.withSubclasses);
-[02_OOP/src/main/java/n_public_private_protected_user/UserClass.java](02_OOP/src/main/java/n_public_private_protected_user/UserClass.java)
-
-...
-[02_OOP/src/main/java/package2/MyClass.java](02_OOP/src/main/java/package2/MyClass.java)
-
-privateField = 11;
-[02_OOP/src/main/java/package2/MyClassSubclass.java](02_OOP/src/main/java/package2/MyClassSubclass.java)
-
-Поле в том же пакете
-Не работает: myClass.privateField
-[02_OOP/src/main/java/package2/TestInSamePackage.java](02_OOP/src/main/java/package2/TestInSamePackage.java)
-
-Поле недоступно, т.к. другой пакет
-packageField = 10;
-[03_ModifiersDemo/src/main/java/D.java](03_ModifiersDemo/src/main/java/D.java)
-
-Доступно везде
-Внутри класса A и во всех наследниках
-Внутри класса A
-во всех классах внутри этого пакета
-Только внутри класса A
-[03_ModifiersDemo/src/main/java/mypackage/A.java](03_ModifiersDemo/src/main/java/mypackage/A.java)
-
-privateField = 2;
-[03_ModifiersDemo/src/main/java/mypackage/B.java](03_ModifiersDemo/src/main/java/mypackage/B.java)
-
-Нет доступа из другого пакета
-a.packageField = 10;
-[03_ModifiersDemo/src/test/java/ATest2.java](03_ModifiersDemo/src/test/java/ATest2.java)
 
 ﻿Виды тестирования: ручное, отладчик (debugger), логи, unit-тесты
 ----------------------------------------------------------------
@@ -1030,11 +867,6 @@ a.packageField = 10;
 Сейчас ипользуется JUnit4.
 Раньше JUnit3 и более ранние.
 
-(Условие) ? Значение_если_истина :
-Значение_если_ложь
-[04_JUnit/src/main/java/MyClass.java](04_JUnit/src/main/java/MyClass.java)
-
-Статический конструктор
 ``` java
     static {
         // ... действия по инициализации класса
@@ -1103,55 +935,31 @@ a.packageField = 10;
 
 [04_JUnit/src/main/java/util/IntToStr.java](04_JUnit/src/main/java/util/IntToStr.java)
 
-Регулярные выражения в Idea IDE:
-assertEquals\(intToStr\((\d+)\), \(?("[^"]+")\)?\
-assertEquals($2, intToStr($1))
-* $1 - первый параметр
-* $2 - второй параметр и т.д.
-[04_JUnit/src/test/java/IntToStrTest.java](04_JUnit/src/test/java/IntToStrTest.java)
+```
 
-Тесты в JUnit
-
-Цель: Либо протестировать уже готовый код.
-
-Либо **регрессионное** тестирование:
-* Один раз проверили что код работает верно
-* Написали тест, который проверяет что код возвращает одни и
-те же результаты
-* На каждой новой версии продукта запускаем
-эти же тесты.
-
-**TDD (Test Driven Development)** -
-разработка через тестирование.
-Принцип: сначала тест, потом код чтобы тест проходил.
-Первый тест
-Название метода произвольное для JUnit4
-Для предыдущих версий важно чтобы метод начинался
-с "test". Поэтому для совместимости чаще
-всего называют метод начиная с "test"
-и добавляют аннотацию
 ``` java
     @Test // Аннотация (начиная с JUnit4)
     // указывает что это тест
-    public void simplest() {
+    public void testSimplest() {
         // assertEquals(expected, actual)
         // assertEquals(message, expected, actual)
-        assertEquals("Дважды два четыре", 4, 2 * 2);
+        int calc = 2 * 2;
+        assertEquals("Дважды два четыре", 4, calc);
         // Действительные числа сравниваются с погрешностью
-        assertEquals("Дважды два четыре", 4.0, 2.0 * 2.0, 1e-15);
+        assertEquals("Дважды два четыре", 4.0, 2.0 * 2.0,
+                1e-15);
         // Сокращённая форма без message
         assertEquals(4, 2 * 2);
         // Конкатенация строк
         assertEquals("test123", "test" + "123");
         // Сравнение массивов
-        assertArrayEquals(new byte[]{1, 2, 3}, new byte[]{0 + 1, 2, 3});
+        assertArrayEquals(new byte[]{1, 2, 3}, new byte[]{1, 2, 3});
     }
-```
 
-Пример: тестируем вычисление факториала
+    // Пример: тестируем вычисление факториала
 ``` java
     @Test
-    public void factorial() {
+    public void testFactorial() {
         assertEquals("1! = ", 1, MyClass.fact(1));
         assertEquals(2, MyClass.fact(2));
         assertEquals(6, MyClass.fact(3));
@@ -1164,18 +972,54 @@ assertEquals($2, intToStr($1))
         assertEquals(2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10, MyClass.fact(10));
         assertEquals(2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10 * 11, MyClass.fact(11));
     }
+
+    /**
+     * Тест с ожидаемым исключением
+     *
+     * @see Test
+     */
+    //@Ignore
+    @Test(expected = IllegalArgumentException.class)
+    public void testExpectedException() {
+        //System.out.println("Test: " + getName());
+        System.out.println("MyClassTest.testExpectedException");
+        throw new IllegalArgumentException("Test");
+    }
+
+    @Test
+    public void testFail() {
+        try {
+            if (1 < 2)
+                throw new IllegalArgumentException("Error description");
+            // ...
+            fail("IllegalArgumentException expected");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Error description", e.getMessage());
+        }
+        assertNotNull(new MyClassTest());
+        assertTrue(1 < 2);
+        assertFalse(1 > 2);
+        assertNull(null);
+    }
+
+    @Before
+    public void setUp() {
+        System.out.println("MyClassTest.setUp");
+    }
+
+    @Before
+    public void setUp2() {
+        System.out.println("MyClassTest.setUp2");
+    }
+
+    @After
+    public void tearDown() {
+        System.out.println("MyClassTest.tearDown");
+    }
 ```
 
 [04_JUnit/src/test/java/MyClassTest.java](04_JUnit/src/test/java/MyClassTest.java)
 
-
-Исключения в Java
-----------------
-Бывают двух видов:
-* Наследники от класса **Exception**
-надо указывать throws в цепочке вызовов.
-* Наследники от класса **RuntimeException**
-не надо указывать throws.
 ``` java
 // Любое значение X
 public class AnyXException extends RuntimeException {
@@ -1184,8 +1028,6 @@ public class AnyXException extends RuntimeException {
 
 [05_SquareEq/src/main/java/AnyXException.java](05_SquareEq/src/main/java/AnyXException.java)
 
-Практика: Решение квадратного уравнения
----------------------------------------
 ``` java
     // Точность вычислений
     public static final double DELTA = 0.000000001;
@@ -1220,8 +1062,8 @@ public class AnyXException extends RuntimeException {
         // Если D > 0 => 2 решения
         if (D > 0) {
             return new double[]{
-                    (-b - sqrt(D) / (2 * a)),
-                    (-b + sqrt(D) / (2 * a))
+                    (-b - sqrt(D)) / (2 * a),
+                    (-b + sqrt(D)) / (2 * a)
             };
         }
         // Нет решений
@@ -1231,7 +1073,6 @@ public class AnyXException extends RuntimeException {
 
 [05_SquareEq/src/main/java/SquareEq.java](05_SquareEq/src/main/java/SquareEq.java)
 
-Первый (самый простой) тест
 ``` java
     @Test
     public void testSimple() {
@@ -1244,7 +1085,6 @@ public class AnyXException extends RuntimeException {
     }
 ```
 
-Рассматриваем случай, когда два решения уравнения
 ``` java
     @Test
     public void twoSolutions() {
@@ -1255,23 +1095,31 @@ public class AnyXException extends RuntimeException {
                 new double[]{-2.0, 2.0},
                 SquareEq.solve(1.0, 0.0, -4.0), DELTA);
     }
+
+    /**
+     * Отдельный тест когда b != 0
+     */
+    @Test
+    public void twoSolutionsBNotNull() {
+        // (x-1)(x-2) = x^2 - 3x + 2
+        assertArrayEquals("x^2 - 3x + 2 = 0",
+                new double[]{1.0, 2.0},
+                SquareEq.solve(1.0, -3.0, 2.0), DELTA);
+    }
 ```
 
-Тестируем вырожденный случай: a = 0, b = 0
 ``` java
     @Test
-    public void zeroAZeroB() {
+    public void testZeroAZeroB() {
         assertArrayEquals("1 = 0",
                 new double[]{},
                 SquareEq.solve(0.0, 0.0, 1.0), DELTA);
     }
 ```
 
-Вырожденный случай: a = 0, b = 0, c = 0
-Ожидаемое исключение
 ``` java
     @Test(expected = AnyXException.class)
-    public void zeroAZeroBZeroC() {
+    public void testZeroAZeroBZeroC() {
         assertArrayEquals("0 = 0",
                 new double[]{},
                 SquareEq.solve(0.0, 0.0, 0.0), DELTA);
@@ -1280,27 +1128,6 @@ public class AnyXException extends RuntimeException {
 
 [05_SquareEq/src/test/java/SquareEqTest.java](05_SquareEq/src/test/java/SquareEqTest.java)
 
-Печать даты в строку
-Из строки в дату
-Из даты в Oracle
-Из БД в дату
-[06_DateDemo/src/test/java/DateOracleDBTest.java](06_DateDemo/src/test/java/DateOracleDBTest.java)
-
-Если слишком маленькие изменения => выходим
-Получаем новый член ряда из предыдущего
-Добавляем к ряду
-[07_ArcSin/src/main/java/Calc.java](07_ArcSin/src/main/java/Calc.java)
-
-Имя животного
-Описание животного
-[08_ConsoleDemo/src/main/java/Animal.java](08_ConsoleDemo/src/main/java/Animal.java)
-
-Ввод с клавиатуры и вывод на экран
-----------------------------------
-Для ввода с клавиатуры используем
-класс **Scanner**
-System.in - стандартный поток ввода
-с клавиатуры
 ``` java
         Scanner s = new Scanner(System.in);
         // Два числа с клавиатуры
@@ -1312,41 +1139,6 @@ System.in - стандартный поток ввода
 ```
 
 [08_ConsoleDemo/src/main/java/ConsoleInput.java](08_ConsoleDemo/src/main/java/ConsoleInput.java)
-
-Открываем файл
-Text, TextFile
-Читаем из файла
-System.out.println("Загадайте животное, я буду угадывать животное, задавать вам вопросы");
-Программа угадывает жив
-Создаём новое животное
-Имя
-Пропускаем тире (минус)
-Описание животного
-Добавляем его в список животных
-Задумываем животное из списка
-Составили список из 4-х животных
-Одно задуманное (верное)
-И ещё 3 случайных
-Количество животных (сложность для пользователя)
-Теперь мы выводим список животных
-Нумерация для пользователя с 1
-А внутри программы индексы с 0
-[08_ConsoleDemo/src/main/java/MyClass.java](08_ConsoleDemo/src/main/java/MyClass.java)
-
-create JavaFX scene
-[09_SwingApplication/src/main/java/swingapplication/SwingApplication.java](09_SwingApplication/src/main/java/swingapplication/SwingApplication.java)
-
-Читаем текстовый файл
-Выводим его содержимое в консоль
-Показываем содержимое файла пользователю в диалоговом окне
-Выводим диалог с его содержимым на экран
-[10_ReadTextDemo/src/main/java/com/company/Main.java](10_ReadTextDemo/src/main/java/com/company/Main.java)
-
-Get Sin(x) with Precision of e
-Find factorial
-Find high/low bound
-Find precision limit
-[12_IntegrationTesting/src/main/java/ru/ifmo/demo/functions/Sin.java](12_IntegrationTesting/src/main/java/ru/ifmo/demo/functions/Sin.java)
 
 Домашнее задание: Придумать объектную модель резюме
 ---------------------------------------------------
@@ -1364,12 +1156,6 @@ Find precision limit
 
 
 
-ФИО
-Дата рождения
-Фото
-
-[HW_ResumeModel/src/main/java/Resume.java](HW_ResumeModel/src/main/java/Resume.java)
-
 ﻿Графические библиотеки (обзор): AWT, Swing, JavaFX
 --------------------------------------------------
 * AWT (Abstract Window Toolkit) - исходная платформо-независимая оконная библиотека графического интерфейса
@@ -1380,13 +1166,119 @@ Find precision limit
 работы в браузерах и на мобильных телефонах, в том числе, работающих с мультимедийным содержимым.
 
 ﻿Домашнее задание
-----------------
+-----------------
 
-1. Решение квадратного уравнения a*x^2 + b*x + c = 0:
+* Регистрация adobeConnect
+* Зарегистироваться на github.com
+* Отправить свой логин на почту: stden@mail.ru
+Я добавлю вас в группу: https://github.com/levelp
+* Этот файл: https://github.com/levelp/java_01/homework.md
+* Скачать и установить себе JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+* https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
+* Зарегистироваться на https://account.jetbrains.com/login
+и активировать Idea
+
+Решение квадратного уравнения a*x^2 + b*x + c = 0
+-------------------------------------------------
  * Вводим с клавиатуры или из файла a, b, c
  * Выводим весь процесс решения и результаты на экран (в консоль) или в файл
  * a = 0, b = 0, c = 0  =>  x - любое
 
-2. Добавить себя в список: https://github.com/levelp/ToDoList
+Разложение на слагаемые (рекурсия, массивы)
+-------------------------------------------
+Пользователь вводит натуральное число N
+Надо вывести все разложения на слагаемые. Разложения отличающиеся порядком слагаемых считаются одинаковыми.
+```
+N = 4
+4 = 4
+4 = 3 + 1
+4 = 2 + 2
+4 = 2 + 1 + 1
+4 = 1 + 1 + 1 + 1
+```
+N <= 100
+
+Скобочные последовательности
+----------------------------
+N - количество открывающих скобок = количество закрывающих скобок
+Вывести в лексикографическом порядке все правильные скобочные последовательности из N пар скобок.
+```
+N = 1
+()
+```
+```
+N = 2
+(())
+()()
+```
+```
+N = 3
+((()))
+(()())
+(())()
+()(())
+()()()
+```
+```
+N = 4
+(((())))
+((()()))
+((())())
+((()))()
+(()(()))
+(()()())
+(()())()
+(())(())
+(())()()
+()((()))
+()(()())
+()(())()
+()()(())
+()()()()
+```
+
+Подумать о проекте, о предметной области
+----------------------------------------
+
+
+
+
+Добавить себя в список
+----------------------
+https://github.com/levelp/ToDoList
+
+Проекты для совместной разработки
+=================================
+
+JobSite - сайт с резюме (для поиска работы)
+------------------------------------------
+*
+
+ToDoList - список задач + синхронизация
+---------------------------------------
+* Олег
+* Сергей Х.
+* Дмитрий Ч.
+* Иван З.
+* Виталий Королёв
+
+
+Ваши проекты....
+*
+
+
+Web-приложение для управления банковскими счетами
+(применяемые технологии: Spring, Hibernate, Maven, Tomcat, Git,...; DB: Postgresql;
+м.б. многопоточность, масштабируемость (???) ...):
+- хранить данные о клиентах банка (id, name, address,...), счетах(id, id владельца, сумма);
+- транзакции и переводы денег м/д счетами или их поступления/списания;
+- приложение должно содержать формы: список клиентов банка, при щелчке по имени открываются счета выбранного клиента;
+- список счетов заданного клиента (+ форма для добавления нового счета);
+- форма для перевода денег м/д счетами и для пополнения/списания денег: затраты, покупки ...;
+- страница со списком транзакций (+ форма фильтра, чтобы можно было выбрать за период и/или по заданному клиенту;
+- дополнения на вкус.
+
+--------------------------------------------------------------------
+* Вячеслав С.
 
 
