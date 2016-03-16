@@ -10,6 +10,10 @@ public class I_Printf {
     public static void main(String[] args) {
         // %d - целые числа
         int i = 13;
+        // %n - перевод строки соответствующий платформе
+        // 13,10 - Windows  CRLF
+        // 10 - *nix  LF
+        // 13 - MacOS (классических, до перехода на ядро BSD) CR
         System.out.printf("%d%n", i);
         // 3 символа на каждое число
         System.out.printf("%3d\n", i);
@@ -32,17 +36,19 @@ public class I_Printf {
 
         // AF3D
         System.out.printf("%X\n", 2014);
-        System.out.printf("%04X\n", 2014);
+        // 0000FE23
+        System.out.printf("%08X\n", 2014);
 
         // Перевод
         // Действительные числа
         float f = 1.1f;
         System.out.printf("%.2f%n", f);
 
+        // [5.233      ] - 10 символов
         double d = 1.1;
         System.out.printf("%-10.3f%n", d);
 
-        //
+        // 1.1221E+12
         System.out.printf("%e%n", d);
 
     }

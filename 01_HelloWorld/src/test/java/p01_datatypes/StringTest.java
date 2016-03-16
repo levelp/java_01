@@ -33,6 +33,7 @@ public class StringTest {
         assertEquals('a', "abc".charAt(0));
         assertEquals('b', "abc".charAt(1));
         assertEquals('c', "abc".charAt(2));
+        System.out.println("str.length() = " + str.length());
 
         // Сравнение строк
         assertEquals("Строки равны", 0, "a".compareTo("a"));
@@ -63,7 +64,7 @@ public class StringTest {
         assertEquals('i', charSequence.charAt(0));
         assertEquals('s', charSequence.charAt(1));
 
-        // Замена символов
+        // Замена символов replace
         assertEquals("Не выговариваем букву Р", "Наплимел", "Например".replace('р', 'л'));
 
 

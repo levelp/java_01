@@ -13,4 +13,9 @@ public class Airplane {
      */
     double weight;
 
+    /**
+     * Предельная высота полёта
+     */
+
+
 }

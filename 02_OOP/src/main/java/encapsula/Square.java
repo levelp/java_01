@@ -2,6 +2,9 @@ package encapsula;
 
 /**
  * Квадрат
+ * - сторона side
+ * - прощадь area
+ * side^2 = area
  */
 public interface Square {
 

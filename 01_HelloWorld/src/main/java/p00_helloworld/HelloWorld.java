@@ -10,6 +10,9 @@ public class HelloWorld {
               */
         // Однострочный комментарий
         System.out.println("Hello, world!");
+
+        //int i; // В стек основного потока main
+        //Runtime.getRuntime().gc();
     }
 }
 //<--

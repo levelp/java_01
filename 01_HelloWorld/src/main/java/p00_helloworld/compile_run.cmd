@@ -1,5 +1,5 @@
 @echo Compile Java Source: 
-javac HelloWorld.java
+javac -encoding utf8 HelloWorld.java
 @echo Run HelloWorld.class:
 pushd
 cd ..

@@ -1,7 +1,7 @@
 package abstraction.sales;
 
 /**
- * Самолёт
+ * Самолёт с точки зрения продажи билетов
  */
 public class Airplane {
     /**

@@ -95,6 +95,7 @@ public class A_PrimitiveTypes {
         // 0101
         // 0110
         //
+        System.out.println("Диапазон: " + Long.MIN_VALUE + ".." + Long.MAX_VALUE);
 
         // Вещественные типы (действительные)
         // 5. **float** - 4 байта
@@ -106,6 +107,7 @@ public class A_PrimitiveTypes {
         System.out.println("Float.MAX_VALUE = " + Float.MAX_VALUE);
 
         // 6. **double** - 8 байт
+        //   10101101 * 2^{1010101}
         double doubleValue = 1123.22 * 1.0 / 2.3;
         System.out.printf("doubleValue = %s%n", doubleValue);
         System.out.println(Double.MIN_VALUE + ".." +
@@ -118,6 +120,7 @@ public class A_PrimitiveTypes {
         boolean bool3 = bool && bool2;
         // && - И  || - ИЛИ
         System.out.printf("bool3 = %s%n", bool3);
+        Boolean aBoolean = bool;
 
         //
         // true / false
@@ -169,6 +172,10 @@ public class A_PrimitiveTypes {
             System.out.println("j = " + j);
 
         // Вывод аргументов командной строки
+        // foreach
+        for (int i : new int[]{2, 3, 10}) {
+            System.out.println("i = " + i);
+        }
         for (String s : args) {
             System.out.println(s);
         }

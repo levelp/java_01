@@ -16,7 +16,7 @@ import org.junit.*;
 // **TDD (Test Driven Development)** -
 // разработка через тестирование.
 // Принцип: сначала тест, потом код чтобы тест проходил.
-public class MyClassTest extends Assert /*extends TestCase*/ {
+public class MyClassTest extends Assert /*TestCase*/ {
 
     @BeforeClass
     public static void beforeClass() {
@@ -39,7 +39,7 @@ public class MyClassTest extends Assert /*extends TestCase*/ {
     //-->
     @Test // Аннотация (начиная с JUnit4)
     // указывает что это тест
-    public void testSimplest() {
+    public void testSimplest() { // startWith("test") - JUnit3 и ранее
         // assertEquals(expected, actual)
         // assertEquals(message, expected, actual)
         int calc = 2 * 2;
@@ -53,9 +53,16 @@ public class MyClassTest extends Assert /*extends TestCase*/ {
         assertEquals("test123", "test" + "123");
         // Сравнение массивов
         assertArrayEquals(new byte[]{1, 2, 3}, new byte[]{1, 2, 3});
+
+        // Специальная форма для Boolean
+        assertTrue(1 < 2);
+        assertFalse(3 > 4);
     }
 
     // Пример: тестируем вычисление факториала
+    // Важен баланс между:
+    //  - временем выполнения тестов
+    //  - покрытием (рассмотреть все варианты)
     //-->
     @Test
     public void testFactorial() {
@@ -77,7 +84,7 @@ public class MyClassTest extends Assert /*extends TestCase*/ {
      *
      * @see Test
      */
-    //@Ignore
+    @Ignore // Исправим в версии 5.2
     @Test(expected = IllegalArgumentException.class)
     public void testExpectedException() {
         //System.out.println("Test: " + getName());
@@ -87,6 +94,7 @@ public class MyClassTest extends Assert /*extends TestCase*/ {
 
     @Test
     public void testFail() {
+        System.out.println("MyClassTest.testFail: start");
         try {
             if (1 < 2)
                 throw new IllegalArgumentException("Error description");
@@ -95,10 +103,13 @@ public class MyClassTest extends Assert /*extends TestCase*/ {
         } catch (IllegalArgumentException e) {
             assertEquals("Error description", e.getMessage());
         }
+
         assertNotNull(new MyClassTest());
+        assertNull(null);
+
         assertTrue(1 < 2);
         assertFalse(1 > 2);
-        assertNull(null);
+        System.out.println("MyClassTest.testFail: finish");
     }
 
     @Before

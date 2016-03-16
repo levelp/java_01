@@ -3,7 +3,7 @@ package inheritance;
 public class SubClass extends SuperClass {
 
     public SubClass() {
-        //super(); // Вызываем конструктор суперкласса
+        super(10); // Вызываем конструктор суперкласса
         System.out.println("Конструктор Подкласса");
     }
 

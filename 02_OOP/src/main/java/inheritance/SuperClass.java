@@ -6,6 +6,10 @@ package inheritance;
 public class SuperClass {
 
     public SuperClass() {
-        System.out.println("Суперкласс");
+        System.out.println("Конструктор Суперкласса");
+    }
+
+    public SuperClass(int i) {
+        System.out.println("Другой конструктор суперкласса");
     }
 }

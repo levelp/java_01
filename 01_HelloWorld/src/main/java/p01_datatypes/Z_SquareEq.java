@@ -18,7 +18,7 @@ public class Z_SquareEq {
         System.out.println("== Решение квадратного уравнения ==");
         System.out.println("Введите коэффициенты");
         System.out.print("a = ");
-        a = s.nextDouble();
+        a = s.nextDouble(); // 1.2213
         System.out.print("b = ");
         b = s.nextDouble();
         System.out.print("c = ");

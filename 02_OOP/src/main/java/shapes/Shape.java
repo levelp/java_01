@@ -1,9 +1,12 @@
 package shapes;
 
 /**
- * Фигура (интерфейс)
+ * Фигура (абстрактный класс)
  */
 public abstract class Shape {
+    /**
+     * Имя фигуры
+     */
     String name;
 
     /**

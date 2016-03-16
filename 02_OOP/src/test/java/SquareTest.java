@@ -12,8 +12,10 @@ public class SquareTest {
 
     @Test
     public void testSideArea() {
+        System.out.println("== SquareSide() ==");
         Square square = new SquareSide();
         testSquare(square);
+        System.out.println("== SquareArea() ==");
         testSquare(new SquareArea());
     }
 

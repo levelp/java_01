@@ -13,6 +13,7 @@ public class A {
     private int onlyInA = 2;
 
     // Внутри класса A и всех наследников A
+    // + внутри пакета
     protected int withSubclasses = 3;
 
     // Доступно всем
