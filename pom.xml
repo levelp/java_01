@@ -38,6 +38,8 @@
         <module>10_ReadTextDemo</module>
         <module>12_IntegrationTesting</module>
         <module>HW_ResumeModel</module>
+        <module>Homework_decomposition</module>
+        <module>Homework_brackets</module>
     </modules>
 
     <!-- Зависимости: подключаю библиотеки -->

@@ -12,7 +12,7 @@ public class C2_FloatAccuracy {
         sumDouble(0.4, 0.7, 1.1);
         sumDouble(0.5, 0.7, 1.2);
         sumFloat(0.5f, 0.7f, 1.2f);
-        sumDouble(0.6, 0.7, 1.3);
+        sumDouble(.6, 0.7, 1.3);
         sumFloat(0.6f, 0.7f, 1.3f);
         out.println("Но не думайте что float без потери точности...");
         sumFloat(0.9f, 0.7f, 1.6f);

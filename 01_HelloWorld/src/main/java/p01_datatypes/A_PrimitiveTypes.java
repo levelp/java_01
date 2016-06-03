@@ -1,5 +1,7 @@
 package p01_datatypes;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Random;
 
 /// 8 примитивных типов данных: byte, short, int, long, float, double, boolean, char
@@ -68,9 +70,10 @@ public class A_PrimitiveTypes {
         // 4. 64-битное целое **long**
         long l = 2147483648L; // 64-битное целое
         System.out.println("l = " + l);
-        long l2 = 10000000000L;
+        long l2 = 100000000000L;
         System.out.println("l2 = " + l2);
 
+        // -128..127
         byte b1 = (byte) 0xff;
         System.out.println("b1 = " + b1);
         int bb = 0xff & b1; // & - побитовое И
@@ -113,11 +116,18 @@ public class A_PrimitiveTypes {
         System.out.println(Double.MIN_VALUE + ".." +
                 Double.MAX_VALUE);
 
+        // Длинная арифметика
+        BigInteger bigInteger = new BigInteger("10000000123123213");
+        BigDecimal bigDecimal = new BigDecimal("213425325325323123.211232145321");
+        BigInteger bi2 = bigInteger.add(new BigInteger("1421425325325"));
+
         // 7. Логический тип: true / false
         Random random = new Random();
         boolean bool = random.nextBoolean();
         boolean bool2 = random.nextBoolean();
         boolean bool3 = bool && bool2;
+        boolean bb2 = Boolean.parseBoolean("true");
+
         // && - И  || - ИЛИ
         System.out.printf("bool3 = %s%n", bool3);
         Boolean aBoolean = bool;
@@ -150,7 +160,10 @@ public class A_PrimitiveTypes {
         System.out.println("a = " + a);
         // Условный оператор **if**
         //-->
-        if (a > 1 && a < 10) { // Когда условие истинно
+        //if(2 && 3){
+        //
+        //}
+        if (a > 1 && a < 10 || !(a == 11)) { // Когда условие истинно
             System.out.println("a большая :)");
         } else { // в противоположном случае
             System.out.println("a маленькая или очень большая");

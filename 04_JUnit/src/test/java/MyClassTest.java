@@ -16,7 +16,7 @@ import org.junit.*;
 // **TDD (Test Driven Development)** -
 // разработка через тестирование.
 // Принцип: сначала тест, потом код чтобы тест проходил.
-public class MyClassTest extends Assert /*TestCase*/ {
+public class MyClassTest extends Assert /*TestCase*/ /* JUnit3 */ {
 
     @BeforeClass
     public static void beforeClass() {
