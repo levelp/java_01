@@ -25,5 +25,7 @@ target
 *.log
 
 # Конфигурационный файл .idea
+.idea
+*.iml
 .idea/workspace.xml
 
