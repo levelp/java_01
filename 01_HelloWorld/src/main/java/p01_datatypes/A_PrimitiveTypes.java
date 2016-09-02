@@ -55,12 +55,17 @@ public class A_PrimitiveTypes {
         System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
         // Java6
         int intBin = Integer.parseInt("1011", 2);
+        int intX = Integer.parseInt("23422", 6);
         System.out.println("intBin = " +
                 Integer.toBinaryString(intBin));
         int integerHex = 0xFFA9; // Шестнадцатеричная система счисления
+        System.out.printf("%d ", integerHex);
         System.out.printf("Hex: %X %n", integerHex); // FFA9
         System.out.printf("Hex: %x %n", integerHex); // ffa9
-        System.out.printf("Hex: %04X %n", integerHex);
+        System.out.printf("Hex: %08X %n", integerHex); // 0000FFA9
+        // CR LF - Windows  13 10
+        // LF - Unix 13
+        // CR - MacOS 10
         // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
         int maxInt = 2147483647; // 2^31-1
         System.out.printf("maxInt = %08X %n", maxInt);
@@ -79,7 +84,7 @@ public class A_PrimitiveTypes {
         int bb = 0xff & b1; // & - побитовое И
         System.out.println("bb = " + bb);
         //
-        // & - побитовое И
+        // & - побитовое И     &&
         // 0011
         // 0101
         // 0001
@@ -100,7 +105,7 @@ public class A_PrimitiveTypes {
         //
         System.out.println("Диапазон: " + Long.MIN_VALUE + ".." + Long.MAX_VALUE);
 
-        // Вещественные типы (действительные)
+        // Вещественные типы (действительные) - IEEE
         // 5. **float** - 4 байта
         float floatValue = 2.3f;
         System.out.printf("floatValue = %f%n", floatValue);
@@ -177,7 +182,7 @@ public class A_PrimitiveTypes {
 
         // Цикл с постусловием - Repeat Until
         do {
-            a = a * 3;
+            a = a * 3; // Итерация цикла
         } while (a < 3);
 
         // Цикл for
@@ -216,6 +221,7 @@ public class A_PrimitiveTypes {
         a = a + 1;
         a++; // Постфиксная форма
         ++a; // Префиксная форма
+        int int2 = 0; int2--; --int2;
         System.out.println("a = " + a);
         a = 2;
         int aa = a++ + a++; // aa = 4

@@ -23,7 +23,8 @@ public class Circle extends Shape {
 
     @Override
     public String show() {
-        return "Круг: радиус " + r;
+        return "Круг: радиус " + r +
+                " площадь " + area();
     }
 
     @Override

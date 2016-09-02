@@ -14,7 +14,9 @@ public class Square extends Shape {
 
     @Override
     public String show() {
-        return String.format("Квадрат: сторона %s площадь %s", side, area());
+        return String.format(
+                "Квадрат: сторона %s площадь %s",
+                side, area());
     }
 
     @Override

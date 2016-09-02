@@ -42,11 +42,11 @@ public class I_Printf {
         // Перевод
         // Действительные числа
         float f = 1.1f;
-        System.out.printf("%.2f%n", f);
+        System.out.printf("%.2f%n", f); // 1.10
 
-        // [5.233      ] - 10 символов
-        double d = 1.1;
-        System.out.printf("%-10.3f%n", d);
+        double d = 15.13221;
+        System.out.printf("[%-10.3f]%n", d); // [15.132    ] - 10 символов
+        System.out.printf("[%10.3f]%n", d);  // [    15.132] - 10 символов
 
         // 1.1221E+12
         System.out.printf("%e%n", d);

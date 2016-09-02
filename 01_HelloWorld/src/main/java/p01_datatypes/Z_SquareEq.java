@@ -5,11 +5,14 @@ import java.util.Scanner;
 
 import static java.lang.Math.*;
 
+
 //
 // **Решение квадратного уравнения**
 //
 public class Z_SquareEq {
     public static void main(String args[]) {
+        // Назначаем локаль, чтобы разделителем
+        // целой и десятичной дроби была "."
         Locale.setDefault(Locale.US);
         // Считываем коэффициенты с клавиатуры
         //-->

@@ -10,7 +10,7 @@ public abstract class Shape {
     String name;
 
     /**
-     * @return Вывести строчку презентации
+     * @return Вывести информацию о фигуре
      */
     abstract public String show();
 

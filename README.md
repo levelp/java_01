@@ -14,7 +14,8 @@ TODO:
 Знакомство
 ----------
 
-* Степулёнок Денис Олегович - super.denis@gmail.com
+* Степулёнок Денис Олегович - super.denis@gmail.com / denis.stepulenok@oracle.com
+* Солодкая Анастасия Сергеевна - a.s.solodkaya@gmail.com
 * Громов Илья Анварович - igromovbox@gmail.com
 
 Работаем в Oracle
@@ -294,6 +295,31 @@ Javadoc также предоставляет API для создания док
 
 В каждом случае комментарий должен находиться перед документируемым элементом.
 
+Настройки памяти при запуске JVM
+================================
+java -Xss
+ - Xss - размер стека
+Куча:
+ - Xmx - размер кучи (heap)
+java -Xms6291456 -cp my.jar MainClass  - запуск приложения 6291456 байт
+java -Xms6144k  -- 6144k
+java -Xms6m  - 6 мегабайт
+java -Xms2G  - 2 гигабайта
+-Xmx83886080
+-Xmx81920k
+-Xmx80m
+-XX:MaxPermSize=128M
+
+Что делать если получаем StackOverflowException?
+------------------------------------------------
+* Реально нужно больше стека: увеличить с помощью -Xss
+* Избавится от бесконечной рекурсии
+
+Какие переменные хранятся в стеке?
+----------------------------------
+* Все локальные переменные метода
+* Все параметры метода
+
 
 Лексика языка Java: комментарии, операторы, переменные, литералы, присваивание, операторные скобки
 --------------------------------------------------------------------------------------------------
@@ -326,6 +352,9 @@ public class HelloWorld {
               */
         // Однострочный комментарий
         System.out.println("Hello, world!");
+
+        //int i; // В стек основного потока main
+        //Runtime.getRuntime().gc();
     }
 }
 ```
@@ -334,23 +363,41 @@ public class HelloWorld {
 
 ``` java
     // Шаблон: psvm + <tab>
+    // [p]ublic [s]tatic [v]oid [m]ain
     public static void main(String[] args) {
         // sout
         System.out.println();
         System.out.println("Hello world!");
         // soutv - + вывести значение последней переменной
-        int i = 10;
-        System.out.println("i = " + i);
+        int ii = 10;
+        System.out.println("ii = " + ii);
+        int i1 = 1;
+        int i2 = 2;
+        int i3 = 3;
+        System.out.println("i3 = " + i3);
         // soutm + <tab> - название метода
         System.out.println("IdeaLiveTemplates.main");
+        System.out.println("args = [" + args + "]");
 
         // fori + <tab> - цикл по целочисленной переменной
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                for (int k = 0; k < 10; k++) {
+                    for (int l = 0; l < 10; l++) {
+                        for (int m = 0; m < 10; m++) {
+
+                        }
+                    }
+                }
+            }
+        }
+
         for (int j = 0; j < 10; j++) {
             System.out.println("j = " + j);
         }
         for (int j = 0; j < 10; j++) {
             for (int k = 0; k < 10; k++) {
-                System.out.println(i * j);
+                System.out.println(j * k);
             }
         }
     }
@@ -399,7 +446,10 @@ public class Main {
 ```
 
 ``` java
-        if (a > 1 && a < 10) { // Когда условие истинно
+        //if(2 && 3){
+        //
+        //}
+        if (a > 1 && a < 10 || !(a == 11)) { // Когда условие истинно
             System.out.println("a большая :)");
         } else { // в противоположном случае
             System.out.println("a маленькая или очень большая");
@@ -635,7 +685,7 @@ public class Main {
         System.out.println("== Решение квадратного уравнения ==");
         System.out.println("Введите коэффициенты");
         System.out.print("a = ");
-        a = s.nextDouble();
+        a = s.nextDouble(); // 1.2213
         System.out.print("b = ");
         b = s.nextDouble();
         System.out.print("c = ");
@@ -809,6 +859,7 @@ Java не поддерживает множественное наследова
     private int onlyInA = 2;
 
     // Внутри класса A и всех наследников A
+    // + внутри пакета
     protected int withSubclasses = 3;
 
     // Доступно всем
@@ -940,7 +991,7 @@ public class B extends A {
 ``` java
     @Test // Аннотация (начиная с JUnit4)
     // указывает что это тест
-    public void testSimplest() {
+    public void testSimplest() { // startWith("test") - JUnit3 и ранее
         // assertEquals(expected, actual)
         // assertEquals(message, expected, actual)
         int calc = 2 * 2;
@@ -954,9 +1005,16 @@ public class B extends A {
         assertEquals("test123", "test" + "123");
         // Сравнение массивов
         assertArrayEquals(new byte[]{1, 2, 3}, new byte[]{1, 2, 3});
+
+        // Специальная форма для Boolean
+        assertTrue(1 < 2);
+        assertFalse(3 > 4);
     }
 
     // Пример: тестируем вычисление факториала
+    // Важен баланс между:
+    //  - временем выполнения тестов
+    //  - покрытием (рассмотреть все варианты)
 ``` java
     @Test
     public void testFactorial() {
@@ -978,7 +1036,7 @@ public class B extends A {
      *
      * @see Test
      */
-    //@Ignore
+    @Ignore // Исправим в версии 5.2
     @Test(expected = IllegalArgumentException.class)
     public void testExpectedException() {
         //System.out.println("Test: " + getName());
@@ -988,6 +1046,7 @@ public class B extends A {
 
     @Test
     public void testFail() {
+        System.out.println("MyClassTest.testFail: start");
         try {
             if (1 < 2)
                 throw new IllegalArgumentException("Error description");
@@ -996,10 +1055,13 @@ public class B extends A {
         } catch (IllegalArgumentException e) {
             assertEquals("Error description", e.getMessage());
         }
+
         assertNotNull(new MyClassTest());
+        assertNull(null);
+
         assertTrue(1 < 2);
         assertFalse(1 > 2);
-        assertNull(null);
+        System.out.println("MyClassTest.testFail: finish");
     }
 
     @Before
@@ -1168,7 +1230,7 @@ public class AnyXException extends RuntimeException {
 ﻿Домашнее задание
 -----------------
 
-* Регистрация adobeConnect
+* Регистрация в adobeConnect
 * Зарегистироваться на github.com
 * Отправить свой логин на почту: stden@mail.ru
 Я добавлю вас в группу: https://github.com/levelp
@@ -1177,6 +1239,11 @@ public class AnyXException extends RuntimeException {
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
 * Зарегистироваться на https://account.jetbrains.com/login
 и активировать Idea
+
+Подумать о проекте, о предметной области
+----------------------------------------
+*
+
 
 Решение квадратного уравнения a*x^2 + b*x + c = 0
 -------------------------------------------------
@@ -1237,15 +1304,14 @@ N = 4
 ()()()()
 ```
 
-Подумать о проекте, о предметной области
-----------------------------------------
-
 
 
 
 Добавить себя в список
 ----------------------
 https://github.com/levelp/ToDoList
+
+
 
 Проекты для совместной разработки
 =================================

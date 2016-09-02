@@ -23,7 +23,8 @@ public class Rectangle extends Shape {
     @Override
     public String show() {
         return "Прямоугольник: " +
-                "a = " + a + " b = " + b + " площадь " + area();
+                "a = " + a + " b = " + b +
+                " площадь " + area();
     }
 
     @Override
