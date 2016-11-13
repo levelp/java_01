@@ -49,23 +49,13 @@ public class DecompositionTest extends Assert {
     }
 
     @Test
-    public void test3() {
-        Decomposition t = new Decomposition(3);
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(os));
-        t.gen();
-        assertEquals("3 = 3\r\n3 = 2 + 1\r\n3 = 1 + 1 + 1\r\n", os.toString());
+    public void test3() throws IOException {
+        checkFile(3);
     }
 
     @Test
-    public void test4() {
-        Decomposition t = new Decomposition(4);
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(os));
-        t.gen();
-        assertEquals("4 = 4\r\n4 = 3 + 1\r\n" +
-                "4 = 2 + 2\r\n4 = 2 + 1 + 1\r\n" +
-                "4 = 1 + 1 + 1 + 1\r\n", os.toString());
+    public void test4() throws IOException {
+        checkFile(4);
     }
 
     @Test
