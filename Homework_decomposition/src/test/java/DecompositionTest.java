@@ -76,8 +76,8 @@ public class DecompositionTest extends Assert {
 
     @Test
     @Ignore // Тест производительности (слишком долгий)
-    public void test100() {
-        Decomposition t = new Decomposition(100);
+    public void test40() {
+        Decomposition t = new Decomposition(40);
         t.gen();
     }
 }

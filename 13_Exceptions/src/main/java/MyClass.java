@@ -1,6 +1,4 @@
-/**
- * Created by dstepule on 02.09.2016.
- */
+// Класс для демонстрации различных видов исключений
 public class MyClass {
     public static void main(String[] args)
             throws MyException {
