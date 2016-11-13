@@ -2,6 +2,9 @@
 Синтаксис Java. ООП. Тестирование и отладка
 ===========================================
 
+[![Build Status](https://travis-ci.org/levelp/java_01.svg?branch=master)](https://travis-ci.org/levelp/java_01)
+[![Coverage Status](https://coveralls.io/repos/github/levelp/java_01/badge.svg?branch=master)](https://coveralls.io/github/levelp/java_01?branch=master)
+
 TODO:
 -----
 * Зарегистироваться на github.com
@@ -806,14 +809,6 @@ Markdown файл
     }
 }
 [01_HelloWorld/src/test/java/p01_datatypes/StringTest.java](01_HelloWorld/src/test/java/p01_datatypes/StringTest.java)
-
-<<<<<<< HEAD
-Markdown файл
-=============
-=======
-Использование Markdown-разметки для документации
-------------------------------------------------
->>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
 ООП
 ===
