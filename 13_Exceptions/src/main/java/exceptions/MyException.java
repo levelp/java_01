@@ -4,7 +4,7 @@ public class MyException extends Exception {
     String myStringParam;
     int intParam;
 
-    public MyException(){
+    public MyException() {
         super("MyException");
     }
 }

@@ -45,7 +45,7 @@ public class SampleTest {
                 assertEquals(pow(2.0, 6.0) + 1, expression.calc(x), 0.01);
         }
 
-        Plotter.plot("/Users/Scotch/graph_all_stub.csv", expression, intervals);
+        Plotter.plot("graph_all_stub.csv", expression, intervals);
     }
 
     @Test
@@ -64,7 +64,7 @@ public class SampleTest {
                 );
         }
 
-        Plotter.plot("/Users/Scotch/graph_all_real.csv", expression, intervals);
+        Plotter.plot("graph_all_real.csv", expression, intervals);
     }
 
     private double csc(double x) {
@@ -88,7 +88,7 @@ public class SampleTest {
                 assertEquals(pow(1.0 + 1 / sin(x), 6.0) - (-1), expression.calc(x), 0.01);
             }
         }
-        Plotter.plot("/Users/Scotch/graph_csc.csv", expression, intervals);
+        Plotter.plot("graph_csc.csv", expression, intervals);
     }
 
     /**
@@ -105,7 +105,7 @@ public class SampleTest {
                         expression.calc(x), 0.01
                 );
         }
-        Plotter.plot("/Users/Scotch/graph_sin.csv", expression, intervals);
+        Plotter.plot("graph_sin.csv", expression, intervals);
     }
 
     @Test
@@ -119,7 +119,7 @@ public class SampleTest {
                         expression.calc(x), 0.01
                 );
         }
-        Plotter.plot("/Users/Scotch/graph_cos.csv", expression, intervals);
+        Plotter.plot("graph_cos.csv", expression, intervals);
     }
 
     @Test
@@ -133,7 +133,7 @@ public class SampleTest {
                         expression.calc(x), 0.01
                 );
         }
-        Plotter.plot("/Users/Scotch/graph_tan.csv", expression, intervals);
+        Plotter.plot("graph_tan.csv", expression, intervals);
     }
 
     @Test
@@ -147,7 +147,7 @@ public class SampleTest {
                         expression.calc(x), 0.01
                 );
         }
-        Plotter.plot("/Users/Scotch/graph_ctg.csv", expression, intervals);
+        Plotter.plot("graph_ctg.csv", expression, intervals);
     }
 
 }

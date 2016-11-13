@@ -3,9 +3,18 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class DecompositionTest extends Assert {
+    private static String readFile(String path) throws IOException {
+        byte[] encoded = Files.readAllBytes(Paths.get(path));
+        return new String(encoded, Charset.forName("UTF-8")).trim();
+    }
+
     @Test
     public void test1() {
         Decomposition t = new Decomposition(1);
@@ -14,7 +23,7 @@ public class DecompositionTest extends Assert {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         System.setOut(new PrintStream(os));
         t.gen();
-        assertEquals("1 = 1\r\n", os.toString());
+        assertEquals(String.format("1 = 1%n"), os.toString());
     }
 
     @Test
@@ -25,7 +34,7 @@ public class DecompositionTest extends Assert {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         System.setOut(new PrintStream(os));
         t.gen();
-        assertEquals("2 = 2\r\n2 = 1 + 1\r\n", os.toString());
+        assertEquals(String.format("2 = 2%n2 = 1 + 1%n"), os.toString());
     }
 
     @Test
@@ -36,7 +45,7 @@ public class DecompositionTest extends Assert {
         System.setOut(new PrintStream(os));
         int[] A = {1, 1};
         t.print(A, A.length);
-        assertEquals("2 = 1 + 1\r\n", os.toString());
+        assertEquals(String.format("2 = 1 + 1%n"), os.toString());
     }
 
     @Test
@@ -60,24 +69,32 @@ public class DecompositionTest extends Assert {
     }
 
     @Test
-    public void test5() {
-        Decomposition t = new Decomposition(5);
+    public void test5() throws IOException {
+        checkFile(5);
+    }
+
+    @Test
+    public void test6() throws IOException {
+        checkFile(6);
+    }
+
+    @Test
+    public void test7() throws IOException {
+        checkFile(7);
+    }
+
+    private void checkFile(int n) throws IOException {
+        Decomposition t = new Decomposition(n);
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         System.setOut(new PrintStream(os));
         t.gen();
-        assertEquals("5 = 5\r\n" +
-                "5 = 4 + 1\r\n" +
-                "5 = 3 + 2\r\n" +
-                "5 = 3 + 1 + 1\r\n" +
-                "5 = 2 + 2 + 1\r\n" +
-                "5 = 2 + 1 + 1 + 1\r\n" +
-                "5 = 1 + 1 + 1 + 1 + 1\r\n", os.toString());
+        assertEquals(readFile(String.format("%02d.a", n)), os.toString().trim());
     }
 
     @Test
     @Ignore // Тест производительности (слишком долгий)
-    public void test100() {
-        Decomposition t = new Decomposition(100);
+    public void test40() {
+        Decomposition t = new Decomposition(40);
         t.gen();
     }
 }

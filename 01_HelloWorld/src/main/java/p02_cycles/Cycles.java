@@ -1,7 +1,7 @@
 package p02_cycles;
 
-// Циклы: while, do while, for
-// ---------------------------
+/// Циклы: while, do while, for
+/// ---------------------------
 public class Cycles {
 
     public static void main(String[] args) {

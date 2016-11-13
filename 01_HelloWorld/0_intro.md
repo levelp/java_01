@@ -20,3 +20,8 @@ Java->class->JVM. Первое приложение Hello World. Package
 8. **char** - символ (2 байта) '\u0000'..'\uffff'
 
 + класс String
+
+Управляющие конструкции
+-----------------------
+
+if, else, while, switch
