@@ -47,7 +47,8 @@ public class DateOracleDBTest {
 
         // Из БД в дату
         Date d = OracleDateHelper.parse("2014-05-09 01:02:03");
-        assertEquals("Fri May 09 01:02:03 MSK 2014", d.toString());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy hh:mm:ss");
+        assertEquals("09.05.2014 01:02:03", dateFormat.format(d));
     }
 
 }
