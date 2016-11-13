@@ -1,6 +1,9 @@
 Синтаксис Java. ООП. Тестирование и отладка 
 ===========================================
 
+[![Build Status](https://travis-ci.org/levelp/java_01.svg?branch=master)](https://travis-ci.org/levelp/java_01)
+[![Coverage Status](https://coveralls.io/repos/github/levelp/java_01/badge.svg?branch=master)](https://coveralls.io/github/levelp/java_01?branch=master)
+
 TODO:
 -----
 * Зарегистироваться на github.com
