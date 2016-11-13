@@ -344,6 +344,11 @@ Java->class->JVM. Первое приложение Hello World. Package
 
 + класс String
 
+Управляющие конструкции
+-----------------------
+
+if, else, while, switch
+
 ``` java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -433,12 +438,17 @@ public class Main {
         System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
         // Java6
         int intBin = Integer.parseInt("1011", 2);
+        int intX = Integer.parseInt("23422", 6);
         System.out.println("intBin = " +
                 Integer.toBinaryString(intBin));
         int integerHex = 0xFFA9; // Шестнадцатеричная система счисления
+        System.out.printf("%d ", integerHex);
         System.out.printf("Hex: %X %n", integerHex); // FFA9
         System.out.printf("Hex: %x %n", integerHex); // ffa9
-        System.out.printf("Hex: %04X %n", integerHex);
+        System.out.printf("Hex: %08X %n", integerHex); // 0000FFA9
+        // CR LF - Windows  13 10
+        // LF - Unix 13
+        // CR - MacOS 10
         // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
         int maxInt = 2147483647; // 2^31-1
         System.out.printf("maxInt = %08X %n", maxInt);
@@ -476,6 +486,7 @@ public class Main {
         a = a + 1;
         a++; // Постфиксная форма
         ++a; // Префиксная форма
+        int int2 = 0; int2--; --int2;
         System.out.println("a = " + a);
         a = 2;
         int aa = a++ + a++; // aa = 4
@@ -525,14 +536,17 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/C_FloatAccuracy.java](01_HelloWorld/src/main/java/p01_datatypes/C_FloatAccuracy.java)
 
+Массивы. Arrays: foreach, многомерные
+-------------------------------------
 ``` java
         // Инициализация
         int[] intArray1 = new int[]{1, 2, 3, 10};
 
         // Сокращённая форма инициализации
         int[] intArray2 = {1, 2, 3, 10};
-        // Массив
-        int[] intArray3 = new int[100];
+        // Массив - можно сразу не инициализировать
+        int[] intArray3;
+        intArray3 = new int[100];
 ```
 
 ``` java
@@ -713,6 +727,8 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/Z_SquareEq.java](01_HelloWorld/src/main/java/p01_datatypes/Z_SquareEq.java)
 
+Циклы: while, do while, for
+---------------------------
 ``` java
         int N = 6;
         System.out.print("N = " + N + " = (inverse binary) = ");
@@ -799,11 +815,17 @@ Markdown файл
 ------------------------------------------------
 >>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
+ООП
+===
+
 Основы объектно-ориентированного программирования: Класс. Экземпляр класса (объект)
 -----------------------------------------------------------------------------------
 
 **ООП** - Объектно-ориентированное программирование
 
+**Класс** -
+
+**Метод** -
 
 Инкапсуляция. Полиморфизм. Интерфейсы. Абстрактные классы
 ---------------------------------------------------------
@@ -824,6 +846,10 @@ Markdown файл
 
 **Полиморфизм** - свойство системы использовать объекты с одинаковым интерфейсом без информации о
 типе и внутренней структуре объекта.
+
+Модификаторы public, protected, private, package local
+------------------------------------------------------
+
 
 Объектная модель. Состояние, поведение, индивидуальность (Гради Буч)
 --------------------------------------------------------------------
@@ -1229,21 +1255,21 @@ public class AnyXException extends RuntimeException {
 
 ﻿Домашнее задание
 -----------------
-
-* Регистрация в adobeConnect
 * Зарегистироваться на github.com
-* Отправить свой логин на почту: stden@mail.ru
+* Отправить свой логин на почту: super.denis@gmail.com denis.stepulenok@oracle.com
 Я добавлю вас в группу: https://github.com/levelp
 * Этот файл: https://github.com/levelp/java_01/homework.md
-* Скачать и установить себе JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+* Скачать и установить себе JavaSE:
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
 * Зарегистироваться на https://account.jetbrains.com/login
 и активировать Idea
 
 Подумать о проекте, о предметной области
 ----------------------------------------
-*
-
+* Классы, поля, методы
+* Алгоритмы
+* Сценарии использования
 
 Решение квадратного уравнения a*x^2 + b*x + c = 0
 -------------------------------------------------
@@ -1251,10 +1277,12 @@ public class AnyXException extends RuntimeException {
  * Выводим весь процесс решения и результаты на экран (в консоль) или в файл
  * a = 0, b = 0, c = 0  =>  x - любое
 
+
 Разложение на слагаемые (рекурсия, массивы)
 -------------------------------------------
 Пользователь вводит натуральное число N
-Надо вывести все разложения на слагаемые. Разложения отличающиеся порядком слагаемых считаются одинаковыми.
+Надо вывести все разложения на слагаемые.
+Разложения отличающиеся порядком слагаемых считаются одинаковыми.
 ```
 N = 4
 4 = 4
