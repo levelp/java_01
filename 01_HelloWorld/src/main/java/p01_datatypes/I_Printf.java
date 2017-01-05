@@ -1,10 +1,10 @@
 package p01_datatypes;
 
-/**
- * Описание строк форматирования:
- * http://docs.oracle.com/javase/tutorial/java/data/numberformat.html
- * https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html
- */
+/// Строки форматирования и System.out.printf
+/// -----------------------------------------
+/// Описание строк форматирования:
+/// * http://docs.oracle.com/javase/tutorial/java/data/numberformat.html
+/// * https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html
 public class I_Printf {
 
     public static void main(String[] args) {

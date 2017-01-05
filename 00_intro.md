@@ -4,10 +4,9 @@
 [![Build Status](https://travis-ci.org/levelp/java_01.svg?branch=master)](https://travis-ci.org/levelp/java_01)
 [![Coverage Status](https://coveralls.io/repos/github/levelp/java_01/badge.svg?branch=master)](https://coveralls.io/github/levelp/java_01?branch=master)
 
-TODO:
------
+**TODO: перед тем, как мы начнём**
 * Зарегистироваться на github.com
-* Подать заявку на вступление в: https://github.com/levelp
+* Прислать мне свой логин чтобы я выслал приглашение в группу: https://github.com/levelp
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition 
 * Зарегистироваться на https://account.jetbrains.com/login
@@ -39,6 +38,8 @@ TODO:
 * http://hashcode.ru/ - ответы на вопросы
 
 **Книги по Java**
+* Java 8. Карманный справочник.	Роберт Лигуори, Патриция Лигуори. https://www.ozon.ru/context/detail/id/30196193/
+* Программирование на Java. Патрик Нимейер, Дэниэл Леук. https://www.ozon.ru/context/detail/id/29684769/
 * Программирование на Java и C# для студента, О. Герман, Ю. Герман: http://www.bookvoed.ru/book?id=3819902
 * Head First Java (Java, A Beginner's Guide) - http://rutracker.org/forum/viewtopic.php?t=4212262
 * Java. The Complete Reference. 8th Edition / Java. Полное руководство. 8-е издание - http://rutracker.org/forum/viewtopic.php?t=4164907 - 
@@ -81,14 +82,14 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 * Java 64 устанавливается в: **C:\Program Files\Java** 
 * Java x86 устанавливается в: **C:\Program Files (x86)\Java**
 
-Почему именно Java?
--------------------
+Почему именно Java? (преимущества)
+----------------------------------
 * http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html - TIOBE Index
 * http://readwrite.com/2014/01/08/in-demand-tech-skills-of-2013-java - Популярность Java
 * http://habrahabr.ru/post/201612/ - Java навсегда! 12 причин длительного доминирования Java
 
-Что такое Java? История создания
---------------------------------
+Что такое Java? История создания языка
+--------------------------------------
 История Java началась в 1991 году, когда группа инженеров из компании Sun под руководством Патрика Нотона (Patrick Naughton) 
 и члена Совета директоров Джеймса Гослинга (James Gosling) занялась разработкой небольшого языка, 
 который можно было бы использовать для программирования бытовых устройств, например, 
@@ -273,8 +274,8 @@ public class Main {
 * http://habrahabr.ru/post/125799/ - Как начать работать с GitHub: быстрый старт
 * http://habrahabr.ru/post/147192/ - Изучить Github за 15 минут: https://try.github.io
 
-Установка и настройка Apache Tomcat
------------------------------------
+Установка и настройка web-сервера Apache Tomcat
+-----------------------------------------------
 * http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.9/bin/apache-tomcat-8.0.9.zip - скачивание Apache Tomcat
 * Распаковать в папку на диске, например в D:\tomcat
 
@@ -297,8 +298,8 @@ Javadoc также предоставляет API для создания док
 
 В каждом случае комментарий должен находиться перед документируемым элементом.
 
-Настройки памяти при запуске JVM
-================================
+Виды памяти: heap, stack. Настройки памяти при запуске JVM
+----------------------------------------------------------
 java -Xss
  - Xss - размер стека
 Куча:
@@ -312,13 +313,11 @@ java -Xms2G  - 2 гигабайта
 -Xmx80m
 -XX:MaxPermSize=128M
 
-Что делать если получаем StackOverflowException?
-------------------------------------------------
+**Что делать если получаем StackOverflowException?**
 * Реально нужно больше стека: увеличить с помощью -Xss
 * Избавится от бесконечной рекурсии
 
-Какие переменные хранятся в стеке?
-----------------------------------
+**Какие переменные хранятся в стеке?**
 * Все локальные переменные метода
 * Все параметры метода
 

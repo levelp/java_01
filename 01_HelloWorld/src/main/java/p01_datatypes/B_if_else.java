@@ -2,9 +2,9 @@ package p01_datatypes;
 
 import java.util.Scanner;
 
-/**
- * Условный оператор if.. else..
- */
+///
+/// Условный оператор if.. else..
+/// -----------------------------
 public class B_if_else {
 
     public static void main(String[] args) {

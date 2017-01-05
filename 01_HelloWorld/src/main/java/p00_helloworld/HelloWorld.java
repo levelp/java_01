@@ -1,7 +1,8 @@
 package p00_helloworld;
 
-// Первая программа на Java (Hello World)
-// --------------------------------------
+/// 
+/// Java->class->JVM. Первая программа на Java (Hello World). Package
+/// -----------------------------------------------------------------
 //-->
 public class HelloWorld {
     public static void main(String[] args) {

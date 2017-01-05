@@ -5,10 +5,9 @@
 [![Build Status](https://travis-ci.org/levelp/java_01.svg?branch=master)](https://travis-ci.org/levelp/java_01)
 [![Coverage Status](https://coveralls.io/repos/github/levelp/java_01/badge.svg?branch=master)](https://coveralls.io/github/levelp/java_01?branch=master)
 
-TODO:
------
+**TODO: перед тем, как мы начнём**
 * Зарегистироваться на github.com
-* Подать заявку на вступление в: https://github.com/levelp
+* Прислать мне свой логин чтобы я выслал приглашение в группу: https://github.com/levelp
 * Скачать JavaSE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
 * Зарегистироваться на https://account.jetbrains.com/login
@@ -40,6 +39,8 @@ TODO:
 * http://hashcode.ru/ - ответы на вопросы
 
 **Книги по Java**
+* Java 8. Карманный справочник.	Роберт Лигуори, Патриция Лигуори. https://www.ozon.ru/context/detail/id/30196193/
+* Программирование на Java. Патрик Нимейер, Дэниэл Леук. https://www.ozon.ru/context/detail/id/29684769/
 * Программирование на Java и C# для студента, О. Герман, Ю. Герман: http://www.bookvoed.ru/book?id=3819902
 * Head First Java (Java, A Beginner's Guide) - http://rutracker.org/forum/viewtopic.php?t=4212262
 * Java. The Complete Reference. 8th Edition / Java. Полное руководство. 8-е издание - http://rutracker.org/forum/viewtopic.php?t=4164907 -
@@ -82,14 +83,14 @@ jdk-8u20-windows-x64.exe /s INSTALLDIR=D:\JDK /INSTALLDIRPUBJRE=D:\JRE
 * Java 64 устанавливается в: **C:\Program Files\Java**
 * Java x86 устанавливается в: **C:\Program Files (x86)\Java**
 
-Почему именно Java?
--------------------
+Почему именно Java? (преимущества)
+----------------------------------
 * http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html - TIOBE Index
 * http://readwrite.com/2014/01/08/in-demand-tech-skills-of-2013-java - Популярность Java
 * http://habrahabr.ru/post/201612/ - Java навсегда! 12 причин длительного доминирования Java
 
-Что такое Java? История создания
---------------------------------
+Что такое Java? История создания языка
+--------------------------------------
 История Java началась в 1991 году, когда группа инженеров из компании Sun под руководством Патрика Нотона (Patrick Naughton)
 и члена Совета директоров Джеймса Гослинга (James Gosling) занялась разработкой небольшого языка,
 который можно было бы использовать для программирования бытовых устройств, например,
@@ -274,8 +275,8 @@ public class Main {
 * http://habrahabr.ru/post/125799/ - Как начать работать с GitHub: быстрый старт
 * http://habrahabr.ru/post/147192/ - Изучить Github за 15 минут: https://try.github.io
 
-Установка и настройка Apache Tomcat
------------------------------------
+Установка и настройка web-сервера Apache Tomcat
+-----------------------------------------------
 * http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.9/bin/apache-tomcat-8.0.9.zip - скачивание Apache Tomcat
 * Распаковать в папку на диске, например в D:\tomcat
 
@@ -298,8 +299,8 @@ Javadoc также предоставляет API для создания док
 
 В каждом случае комментарий должен находиться перед документируемым элементом.
 
-Настройки памяти при запуске JVM
-================================
+Виды памяти: heap, stack. Настройки памяти при запуске JVM
+----------------------------------------------------------
 java -Xss
  - Xss - размер стека
 Куча:
@@ -313,45 +314,18 @@ java -Xms2G  - 2 гигабайта
 -Xmx80m
 -XX:MaxPermSize=128M
 
-Что делать если получаем StackOverflowException?
-------------------------------------------------
+**Что делать если получаем StackOverflowException?**
 * Реально нужно больше стека: увеличить с помощью -Xss
 * Избавится от бесконечной рекурсии
 
-Какие переменные хранятся в стеке?
-----------------------------------
+**Какие переменные хранятся в стеке?**
 * Все локальные переменные метода
 * Все параметры метода
 
 
-Лексика языка Java: комментарии, операторы, переменные, литералы, присваивание, операторные скобки
---------------------------------------------------------------------------------------------------
-* Переменные
-* Литералы
-* Условия
-* Циклы
 
-Java->class->JVM. Первое приложение Hello World. Package
---------------------------------------------------------
-
-Примитивные типы данных
------------------------
-1. **byte** - целое, один байт со знаком -128..127
-2. **short** - целое, два байта со знаком -32.768..32.767
-3. **int** - целое, 4 байта со знаком -2^31..2^31-1
-4. **long** - целое, 8 байт со знаком -2^63..2^63-1
-5. **float** - действительное число (32-bit IEEE 754 floating point)
-6. **double** - действительное число двойной точности (8 байт)
-7. **boolean** - логический тип (true и false)
-8. **char** - символ (2 байта) '\u0000'..'\uffff'
-
-+ класс String
-
-Управляющие конструкции
------------------------
-
-if, else, while, switch
-
+Java->class->JVM. Первая программа на Java (Hello World). Package
+-----------------------------------------------------------------
 ``` java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -367,8 +341,19 @@ public class HelloWorld {
 }
 ```
 
+Если вы изучали Pascal/Delphi:
+``` pas
+Writeln('Hello, world!');
+```
+C/С++:
+``` cpp
+printf("Hello, world!\n"); // С
+cout << "Hello, world!" << endl; // C++
+```
 [01_HelloWorld/src/main/java/p00_helloworld/HelloWorld.java](01_HelloWorld/src/main/java/p00_helloworld/HelloWorld.java)
 
+Шаблоны Idea для быстрого ввода кода: psvm, sout+v/m, fori...
+-------------------------------------------------------------
 ``` java
     // Шаблон: psvm + <tab>
     // [p]ublic [s]tatic [v]oid [m]ain
@@ -428,14 +413,46 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p00_helloworld/subpackage/Main.java](01_HelloWorld/src/main/java/p00_helloworld/subpackage/Main.java)
 
+Лексика языка Java: комментарии, операторы, переменные, литералы, присваивание, операторные скобки
+--------------------------------------------------------------------------------------------------
 8 примитивных типов данных: byte, short, int, long, float, double, boolean, char
 --------------------------------------------------------------------------------
+1. **byte** - целое, один байт со знаком -128..127
+2. **short** - целое, два байта со знаком -32.768..32.767
+3. **int** - целое, 4 байта со знаком -2^31..2^31-1
+4. **long** - целое, 8 байт со знаком -2^63..2^63-1
+5. **float** - действительное число (32-bit IEEE 754 floating point)
+6. **double** - действительное число двойной точности (8 байт)
+7. **boolean** - логический тип (true и false)
+8. **char** - символ (2 байта) '\u0000'..'\uffff'
+
++ класс String
+**Целочисленные типы:**
+1. 8 битное целое - **byte**: -128..127.
+Подробнее:
+http://ru.wikipedia.org/wiki/Дополнительный_код_(представление_числа)
+
+| Двоичное  |Дополнительный код | Байт |
+|-----------|:-----------------:|:----:|
+| 00000000  |    0              |   0  |
+| 00000001  |    1              |   1  |
+| 00000010  |    2              |   2  |
+| 00000011  |    3              |   3  |
+| 00000100  |    4              |   4  |
+|  ...      |   ...             | ...  |
+| 01111111  |   127             | 127  |
+| 10000000  |   -128            | 128  |
+|  ...      |   ...             | ...  |
+| 11111111  |   -1              | 255  |
+
+2. 16-битное целое **short**: -2^15..2^15-1  -32768..32767
 ``` java
         short sh = 32767; // -32768..32767
         System.out.println("short = " + sh + " " +
                 Short.MIN_VALUE + ".." + Short.MAX_VALUE);
 ```
 
+3. 32-битное целое **int**
 ``` java
         int integerBinary = 0b10101010; // Начиная с Java7
         System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
@@ -458,6 +475,46 @@ public class Main {
         System.out.println("Integer.MAX_VALUE = " + Integer.MAX_VALUE);
 ```
 
+4. 64-битное целое **long**
+-128..127
+
+& - побитовое И     &&
+0011
+0101
+0001
+
+| - побитовое ИЛИ
+0011
+0101
+0111
+
+~ - побитовое НЕ
+01
+10
+
+^ - XOR - исключающее ИЛИ
+0011
+0101
+0110
+
+Вещественные типы (действительные) - IEEE
+5. **float** - 4 байта
+6. **double** - 8 байт
+10101101 * 2^{1010101}
+Длинная арифметика
+7. Логический тип: true / false
+&& - И  || - ИЛИ
+
+true / false
+&& - логическое И
+|| - логическое ИЛИ
+Boolean
+8. Символьный тип **char**
+
+Переменные, методы, классы можно
+называть по-русски, имена в кодировке Unicode
+И это лучше чем в транслите
+Условный оператор **if**
 ``` java
         //if(2 && 3){
         //
@@ -469,6 +526,14 @@ public class Main {
         }
 ```
 
+Цикл с предусловием - While
+Цикл с постусловием - Repeat Until
+Цикл for
+Вывод аргументов командной строки
+foreach
+
+Сокращённая форма: +=, -=..., инкремент/декремент, префиксный/постфиксный
+-------------------------------------------------------------------------
 ``` java
         // Сложение
         a = a + 10;
@@ -505,6 +570,9 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/A_PrimitiveTypes.java](01_HelloWorld/src/main/java/p01_datatypes/A_PrimitiveTypes.java)
 
+
+Условный оператор if.. else..
+-----------------------------
 ``` java
         Scanner scanner = new Scanner(System.in);
 
@@ -523,6 +591,13 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/B_if_else.java](01_HelloWorld/src/main/java/p01_datatypes/B_if_else.java)
 
+Проверяем что a+b = c в double
+Обработка погрешности
+Проверяем что a+b = c в float
+[01_HelloWorld/src/main/java/p01_datatypes/C2_FloatAccuracy.java](01_HelloWorld/src/main/java/p01_datatypes/C2_FloatAccuracy.java)
+
+Точность вычислений в действительных числах (float, double)
+-----------------------------------------------------------
 ``` java
         double a = 0.3;
         double b = 0.6;
@@ -552,6 +627,7 @@ public class Main {
         intArray3 = new int[100];
 ```
 
+Пробегаем по всем элементам массива
 ``` java
         for (int i = 0; i < intArray2.length; i++) {
             System.out.println("intArray1[" + i + "] = " +
@@ -565,6 +641,7 @@ public class Main {
         System.out.println(); // Просто перевод строки
 ```
 
+Двухмерный массив
 ``` java
         int[][] array2D = {
                 {1, 2, 3},
@@ -577,6 +654,10 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/D_Arrays.java](01_HelloWorld/src/main/java/p01_datatypes/D_Arrays.java)
 
+
+Передача параметров по ссылке и значению
+----------------------------------------
+i примитивного типа - передаётся по значению
 ``` java
         int i = 10;
         // Integer
@@ -603,6 +684,7 @@ public class Main {
         System.out.println("После вызова method2 object.i = " + object.i);
 ```
 
+i значение копируется
 ``` java
     static void method1(int i) {
         i += 20;
@@ -611,6 +693,7 @@ public class Main {
     }
 ```
 
+i передаётся по ссылке
 ``` java
     static void myMethod2(MyClass i) {
         //i = new MyClass();
@@ -627,6 +710,8 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/E_ByValueByReference.java](01_HelloWorld/src/main/java/p01_datatypes/E_ByValueByReference.java)
 
+Операции: арифметические, побитовые, логические
+-----------------------------------------------
 ``` java
         // 8 базовых (примитивных) типов
         // 4 целочисленных типа (знаковые)
@@ -647,6 +732,8 @@ public class Main {
         myBoolean1 = false;
 ```
 
+Массивы
+Арифметические операции
 ``` java
         int c = a + b; // сложение
         //   - - вычитание
@@ -696,6 +783,32 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p01_datatypes/H_Operators.java](01_HelloWorld/src/main/java/p01_datatypes/H_Operators.java)
 
+Строки форматирования и System.out.printf
+-----------------------------------------
+Описание строк форматирования:
+* http://docs.oracle.com/javase/tutorial/java/data/numberformat.html
+* https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html
+%d - целые числа
+%n - перевод строки соответствующий платформе
+13,10 - Windows  CRLF
+10 - *nix  LF
+13 - MacOS (классических, до перехода на ядро BSD) CR
+3 символа на каждое число
+В шестнадцатеричном виде
+af3d
+AF3D
+0000FE23
+Перевод
+Действительные числа
+1.1221E+12
+[01_HelloWorld/src/main/java/p01_datatypes/I_Printf.java](01_HelloWorld/src/main/java/p01_datatypes/I_Printf.java)
+
+
+**Решение квадратного уравнения**
+
+Назначаем локаль, чтобы разделителем
+целой и десятичной дроби была "."
+Считываем коэффициенты с клавиатуры
 ``` java
         double a, b, c;
         Scanner s = new Scanner(System.in);
@@ -709,10 +822,13 @@ public class Main {
         c = s.nextDouble();
 ```
 
+Вычисляем дискриминант:
+double D = b * b - 4 * a * c;
 ``` java
         double D = pow(b, 2) - 4 * a * c; // pow - power
 ```
 
+Теперь проверяем знак дискриминанта
 ``` java
         if (abs(D) < 1e-16) {
             double x = -b / (2 * a);
@@ -732,6 +848,7 @@ public class Main {
 
 Циклы: while, do while, for
 ---------------------------
+Цикл с предусловием **while(условие) тело_цикла;**
 ``` java
         int N = 6;
         System.out.print("N = " + N + " = (inverse binary) = ");
@@ -742,6 +859,7 @@ public class Main {
         System.out.println();
 ```
 
+Цикл с постусловием **do { тело_цикла } while (условие);**
 ``` java
         int x = 1000;
         do {
@@ -750,6 +868,7 @@ public class Main {
         } while (x > 10);
 ```
 
+Цикл **for(инициализация; условие продолжения; после итерации)**
 ``` java
         System.out.println(" Таблица умножения ");
         System.out.println("===================");
@@ -774,16 +893,35 @@ public class Main {
 
 [01_HelloWorld/src/main/java/p02_cycles/Cycles.java](01_HelloWorld/src/main/java/p02_cycles/Cycles.java)
 
-<<<<<<< HEAD
-Markdown файл
-=============
-=======
 Использование Markdown-разметки для документации
 ------------------------------------------------
->>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
+
+Перевод строки на разных платформах
+-----------------------------------
+ASCII код 10 - LF - \n - перевод строки
+ASCII код 13 - CR - \r - возврат каретки
+MacOSX: 0 10 LF
+Windows: 0 13 CR + 1 10 LF
+MacOSX: 0 10 LF
+[01_HelloWorld/src/test/java/p01_datatypes/NewLineTest.java](01_HelloWorld/src/test/java/p01_datatypes/NewLineTest.java)
+
+
+Класс String: работа со строками
+--------------------------------
+http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+Подстрока
+Создание пустой строки
+Returns the char value at the specified index
+Сравнение строк
+Сравнение без учёта регистра
+Массив символов с символа по символ
+Замена символов replace
+Шаблоны
+Шаблон телефонного номера
 ```
 
+Сравнение строк
 ``` java
     @Test
     public void testStrEq() {
@@ -810,8 +948,9 @@ Markdown файл
 }
 [01_HelloWorld/src/test/java/p01_datatypes/StringTest.java](01_HelloWorld/src/test/java/p01_datatypes/StringTest.java)
 
-ООП
-===
+
+Объектно-ориентированное программирование
+=========================================
 
 Основы объектно-ориентированного программирования: Класс. Экземпляр класса (объект)
 -----------------------------------------------------------------------------------
@@ -863,12 +1002,31 @@ Java не поддерживает множественное наследова
 Вместо множественного наследования классов в Java есть множественное наследование интерфейсов,
 при котором, как утверждается, никаких проблем не возникает.
 
+Не может содержать реализации методов
+int implementation(){
+int i = 2;
+}
+Не может содержать полей
+int x;
+[02_OOP/src/main/java/MyInterface.java](02_OOP/src/main/java/MyInterface.java)
+
+myClass.privateField - нет доступа
+[02_OOP/src/main/java/Test1.java](02_OOP/src/main/java/Test1.java)
+
+B - наследник A
+Первый интерфейс
 ``` java
     public interface I1 {
         void m1();
     }
 ```
 
+A
+/ \
+B C
+\ /
+D
+AbstractClass
 [02_OOP/src/main/java/multi/Demo.java](02_OOP/src/main/java/multi/Demo.java)
 
 ``` java
@@ -889,6 +1047,7 @@ Java не поддерживает множественное наследова
 
 [02_OOP/src/main/java/n_public_private_protected/A.java](02_OOP/src/main/java/n_public_private_protected/A.java)
 
+Класс B - наследник класса A (в том же пакете)
 ``` java
 public class B extends A {
 
@@ -903,7 +1062,51 @@ public class B extends A {
 
 [02_OOP/src/main/java/n_public_private_protected/B.java](02_OOP/src/main/java/n_public_private_protected/B.java)
 
-﻿Виды тестирования: ручное, отладчик (debugger), логи, unit-тесты
+Пользовательский класс внутри того же пакета
+[02_OOP/src/main/java/n_public_private_protected/UserClassInSamePackage.java](02_OOP/src/main/java/n_public_private_protected/UserClassInSamePackage.java)
+
+a.packageLocal = 10;
+a.withSubclasses = 10;
+System.out.println("a.withSubclasses = " + a.withSubclasses);
+[02_OOP/src/main/java/n_public_private_protected_user/UserClass.java](02_OOP/src/main/java/n_public_private_protected_user/UserClass.java)
+
+...
+[02_OOP/src/main/java/package2/MyClass.java](02_OOP/src/main/java/package2/MyClass.java)
+
+privateField = 11;
+[02_OOP/src/main/java/package2/MyClassSubclass.java](02_OOP/src/main/java/package2/MyClassSubclass.java)
+
+Поле в том же пакете
+Не работает: myClass.privateField
+[02_OOP/src/main/java/package2/TestInSamePackage.java](02_OOP/src/main/java/package2/TestInSamePackage.java)
+
+Конструктор
+__init__()
+Point2D.Coordinates
+[02_OOP/src/main/java/shapes/Point2D.java](02_OOP/src/main/java/shapes/Point2D.java)
+
+Поле недоступно, т.к. другой пакет
+packageField = 10;
+[03_ModifiersDemo/src/main/java/D.java](03_ModifiersDemo/src/main/java/D.java)
+
+Доступно везде
+Внутри класса A и во всех наследниках
+Внутри класса A
+во всех классах внутри этого пакета
+Только внутри класса A
+[03_ModifiersDemo/src/main/java/mypackage/A.java](03_ModifiersDemo/src/main/java/mypackage/A.java)
+
+privateField = 2;
+[03_ModifiersDemo/src/main/java/mypackage/B.java](03_ModifiersDemo/src/main/java/mypackage/B.java)
+
+Нет доступа из другого пакета
+a.packageField = 10;
+[03_ModifiersDemo/src/test/java/ATest2.java](03_ModifiersDemo/src/test/java/ATest2.java)
+
+﻿Тестирование
+============
+
+Виды тестирования: ручное, отладчик (debugger), логи, unit-тесты
 ----------------------------------------------------------------
 
 Тестирование тем важнее для проекта, чем проект сложнее, чем большее программистов над ним работает и чем больше времени занимает разработка.
@@ -916,13 +1119,11 @@ public class B extends A {
 * **Ручное** тестирование. Программист (или тестировщик) вводят в программу исходные данные и
             сравнивают полученный от программы результат с тем что они ожидали получить (т.е. у них есть некоторое
             представление о конечном результате и они сравнивают своё представление с реальными реакциями программы на
-            их
-            действия).
+            их действия).
 
 * **Логгирование** Запись происходящих в программе событий в файл (ведение лог-файлов,
             протоколирование работы программы).  Это единственный доступный способ когда программа работает у конечного
             пользователя.
-        </li>
 
 * **Использование отладчика (debugger&rsquo;а)**. Позволяет внимательно проанализировать
             как  работает некоторый небольшой участок кода, выполняя его по шагам (отдельным операторам) и отслеживания
@@ -931,7 +1132,6 @@ public class B extends A {
 * **Unit-тесты** Автоматическое тестирование (модульные unit-тесты, интеграционное тестирование, регрессионное тестирование).
 
 Тесты: модульные, интеграционные, функциональные, регрессионные, приёмочные
----------------------------------------------------------------------------
 
 Модульное тестирование в JUnit4 (+JUnit3)
 -----------------------------------------
@@ -939,6 +1139,11 @@ public class B extends A {
 Сейчас ипользуется JUnit4.
 Раньше JUnit3 и более ранние.
 
+(Условие) ? Значение_если_истина :
+Значение_если_ложь
+[04_JUnit/src/main/java/MyClass.java](04_JUnit/src/main/java/MyClass.java)
+
+Статический конструктор
 ``` java
     static {
         // ... действия по инициализации класса
@@ -1007,8 +1212,37 @@ public class B extends A {
 
 [04_JUnit/src/main/java/util/IntToStr.java](04_JUnit/src/main/java/util/IntToStr.java)
 
+Регулярные выражения в Idea IDE:
+assertEquals\(intToStr\((\d+)\), \(?("[^"]+")\)?\
+assertEquals($2, intToStr($1))
+* $1 - первый параметр
+* $2 - второй параметр и т.д.
+testTestCaseName
+[04_JUnit/src/test/java/IntToStrTest.java](04_JUnit/src/test/java/IntToStrTest.java)
+
+import static org.junit.Assert.*;
+Тесты в JUnit
+
+Цель: Либо протестировать уже готовый код.
+
+Либо **регрессионное** тестирование:
+* Один раз проверили что код работает верно
+* Написали тест, который проверяет что код возвращает одни и
+те же результаты
+* На каждой новой версии продукта запускаем
+эти же тесты.
+
+**TDD (Test Driven Development)** -
+разработка через тестирование.
+Принцип: сначала тест, потом код чтобы тест проходил.
 ```
 
+Первый тест
+Название метода произвольное для JUnit4
+Для предыдущих версий важно чтобы метод начинался
+с "test". Поэтому для совместимости чаще
+всего называют метод начиная с "test"
+и добавляют аннотацию
 ``` java
     @Test // Аннотация (начиная с JUnit4)
     // указывает что это тест
@@ -1103,6 +1337,14 @@ public class B extends A {
 
 [04_JUnit/src/test/java/MyClassTest.java](04_JUnit/src/test/java/MyClassTest.java)
 
+
+Исключения в Java
+----------------
+Бывают двух видов:
+* Наследники от класса **Exception**
+надо указывать throws в цепочке вызовов.
+* Наследники от класса **RuntimeException**
+не надо указывать throws.
 ``` java
 // Любое значение X
 public class AnyXException extends RuntimeException {
@@ -1111,6 +1353,8 @@ public class AnyXException extends RuntimeException {
 
 [05_SquareEq/src/main/java/AnyXException.java](05_SquareEq/src/main/java/AnyXException.java)
 
+Практика: Решение квадратного уравнения
+---------------------------------------
 ``` java
     // Точность вычислений
     public static final double DELTA = 0.000000001;
@@ -1156,6 +1400,7 @@ public class AnyXException extends RuntimeException {
 
 [05_SquareEq/src/main/java/SquareEq.java](05_SquareEq/src/main/java/SquareEq.java)
 
+Первый (самый простой) тест
 ``` java
     @Test
     public void testSimple() {
@@ -1168,6 +1413,7 @@ public class AnyXException extends RuntimeException {
     }
 ```
 
+Рассматриваем случай, когда два решения уравнения
 ``` java
     @Test
     public void twoSolutions() {
@@ -1191,6 +1437,7 @@ public class AnyXException extends RuntimeException {
     }
 ```
 
+Тестируем вырожденный случай: a = 0, b = 0
 ``` java
     @Test
     public void testZeroAZeroB() {
@@ -1200,6 +1447,8 @@ public class AnyXException extends RuntimeException {
     }
 ```
 
+Вырожденный случай: a = 0, b = 0, c = 0
+Ожидаемое исключение
 ``` java
     @Test(expected = AnyXException.class)
     public void testZeroAZeroBZeroC() {
@@ -1211,6 +1460,27 @@ public class AnyXException extends RuntimeException {
 
 [05_SquareEq/src/test/java/SquareEqTest.java](05_SquareEq/src/test/java/SquareEqTest.java)
 
+Печать даты в строку
+Из строки в дату
+Из даты в Oracle
+Из БД в дату
+[06_DateDemo/src/test/java/DateOracleDBTest.java](06_DateDemo/src/test/java/DateOracleDBTest.java)
+
+Если слишком маленькие изменения => выходим
+Получаем новый член ряда из предыдущего
+Добавляем к ряду
+[07_ArcSin/src/main/java/Calc.java](07_ArcSin/src/main/java/Calc.java)
+
+Имя животного
+Описание животного
+[08_ConsoleDemo/src/main/java/Animal.java](08_ConsoleDemo/src/main/java/Animal.java)
+
+Ввод с клавиатуры и вывод на экран
+----------------------------------
+Для ввода с клавиатуры используем
+класс **Scanner**
+System.in - стандартный поток ввода
+с клавиатуры
 ``` java
         Scanner s = new Scanner(System.in);
         // Два числа с клавиатуры
@@ -1223,21 +1493,64 @@ public class AnyXException extends RuntimeException {
 
 [08_ConsoleDemo/src/main/java/ConsoleInput.java](08_ConsoleDemo/src/main/java/ConsoleInput.java)
 
-Домашнее задание: Придумать объектную модель резюме
----------------------------------------------------
+Открываем файл
+Text, TextFile
+Читаем из файла
+System.out.println("Загадайте животное, я буду угадывать животное, задавать вам вопросы");
+Программа угадывает жив
+Создаём новое животное
+Имя
+Пропускаем тире (минус)
+Описание животного
+Добавляем его в список животных
+Задумываем животное из списка
+Составили список из 4-х животных
+Одно задуманное (верное)
+И ещё 3 случайных
+Количество животных (сложность для пользователя)
+Теперь мы выводим список животных
+Нумерация для пользователя с 1
+А внутри программы индексы с 0
+[08_ConsoleDemo/src/main/java/MyClass.java](08_ConsoleDemo/src/main/java/MyClass.java)
 
-Что хранить о пользователе?
-Что хранить о работодателе?
+create JavaFX scene
+[09_SwingApplication/src/main/java/swingapplication/SwingApplication.java](09_SwingApplication/src/main/java/swingapplication/SwingApplication.java)
 
-1. Зарегистрироваться на http://github.com + присоединиться к организации levelp.
-2. Создать проект. JobSite. ResumeModel.
-3. Создать текстовый файл с описанием информации
-которую мы будем хранить о пользователе.
-4. Прислать ссылку на StDen@mail.ru
+Читаем текстовый файл
+Выводим его содержимое в консоль
+Показываем содержимое файла пользователю в диалоговом окне
+Выводим диалог с его содержимым на экран
+[10_ReadTextDemo/src/main/java/java/Main.java](10_ReadTextDemo/src/main/java/java/Main.java)
 
+Get Sin(x) with Precision of e
+Find factorial
+Find high/low bound
+Find precision limit
+[12_IntegrationTesting/src/main/java/ru/ifmo/demo/functions/Sin.java](12_IntegrationTesting/src/main/java/ru/ifmo/demo/functions/Sin.java)
 
+Класс для демонстрации различных видов исключений
+[13_Exceptions/src/main/java/MyClass.java](13_Exceptions/src/main/java/MyClass.java)
 
+ФИО
+Дата рождения
+Фото
 
+[HW_ResumeModel/src/main/java/Resume.java](HW_ResumeModel/src/main/java/Resume.java)
+
+@Test
+[HW_ResumeModel/src/test/java/ResumeTest.java](HW_ResumeModel/src/test/java/ResumeTest.java)
+
+Скобочная последовательность как массив символов
+Какую скобочку можем поставить определяется балансом
+[Homework_brackets/src/main/java/Brackets.java](Homework_brackets/src/main/java/Brackets.java)
+
+Разложение получено
+[Homework_decomposition/src/main/java/Decomposition.java](Homework_decomposition/src/main/java/Decomposition.java)
+
+Заменяю System.out на свой объект, который будет печатать в строчку
+Заменяю System.out на свой объект, который будет печатать в строчку
+Заменяю System.out на свой объект, который будет печатать в строчку
+[Homework_decomposition/src/test/java/DecompositionTest.java](Homework_decomposition/src/test/java/DecompositionTest.java)
 
 ﻿Графические библиотеки (обзор): AWT, Swing, JavaFX
 --------------------------------------------------
@@ -1249,7 +1562,10 @@ public class AnyXException extends RuntimeException {
 работы в браузерах и на мобильных телефонах, в том числе, работающих с мультимедийным содержимым.
 
 ﻿Домашнее задание
------------------
+================
+
+Зарегистрироваться на http://github.com + присоединиться к организации levelp
+-----------------------------------------------------------------------------
 * Зарегистироваться на github.com
 * Отправить свой логин на почту: super.denis@gmail.com denis.stepulenok@oracle.com
 Я добавлю вас в группу: https://github.com/levelp
@@ -1259,6 +1575,19 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * https://www.jetbrains.com/idea/download/ - Idea Ultimate Edition
 * Зарегистироваться на https://account.jetbrains.com/login
 и активировать Idea
+
+Придумать объектную модель для своего проекта
+---------------------------------------------
+
+**Например, для резюме:**
+Что хранить о пользователе?
+Что хранить о работодателе?
+
+2. Создать проект. JobSite. ResumeModel.
+3. Создать текстовый файл с описанием информации
+которую мы будем хранить о пользователе.
+4. Прислать ссылку на StDen@mail.ru
+
 
 Подумать о проекте, о предметной области
 ----------------------------------------
@@ -1327,17 +1656,8 @@ N = 4
 ()()()()
 ```
 
-
-
-
-Добавить себя в список
-----------------------
-https://github.com/levelp/ToDoList
-
-
-
-Проекты для совместной разработки
-=================================
+Проект для совместной разработки
+================================
 
 JobSite - сайт с резюме (для поиска работы)
 ------------------------------------------
@@ -1351,12 +1671,8 @@ ToDoList - список задач + синхронизация
 * Иван З.
 * Виталий Королёв
 
-
-Ваши проекты....
-*
-
-
 Web-приложение для управления банковскими счетами
+-------------------------------------------------
 (применяемые технологии: Spring, Hibernate, Maven, Tomcat, Git,...; DB: Postgresql;
 м.б. многопоточность, масштабируемость (???) ...):
 - хранить данные о клиентах банка (id, name, address,...), счетах(id, id владельца, сумма);
@@ -1367,7 +1683,8 @@ Web-приложение для управления банковскими сч
 - страница со списком транзакций (+ форма фильтра, чтобы можно было выбрать за период и/или по заданному клиенту;
 - дополнения на вкус.
 
---------------------------------------------------------------------
-* Вячеслав С.
+Ваш проект
+----------
+
 
 

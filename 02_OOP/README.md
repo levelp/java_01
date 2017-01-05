@@ -1,9 +1,15 @@
 <!-- doc.py -->
+ООП
+===
+
 Основы объектно-ориентированного программирования: Класс. Экземпляр класса (объект)
 -----------------------------------------------------------------------------------
 
 **ООП** - Объектно-ориентированное программирование
 
+**Класс** -
+
+**Метод** -
 
 Инкапсуляция. Полиморфизм. Интерфейсы. Абстрактные классы
 ---------------------------------------------------------
@@ -25,6 +31,10 @@
 **Полиморфизм** - свойство системы использовать объекты с одинаковым интерфейсом без информации о
 типе и внутренней структуре объекта.
 
+Модификаторы public, protected, private, package local
+------------------------------------------------------
+
+
 Объектная модель. Состояние, поведение, индивидуальность (Гради Буч)
 --------------------------------------------------------------------
 
@@ -42,34 +52,12 @@ Java не поддерживает множественное наследова
 Вместо множественного наследования классов в Java есть множественное наследование интерфейсов,
 при котором, как утверждается, никаких проблем не возникает.
 
-Не может содержать реализации методов
-int implementation(){
-int i = 2;
-}
-Не может содержать полей
-int x;
-[src/main/java/MyInterface.java](src/main/java/MyInterface.java)
-
-myClass.privateField - нет доступа
-[src/main/java/Test1.java](src/main/java/Test1.java)
-
-super(); // Вызываем конструктор суперкласса
-[src/main/java/inheritance/SubClass.java](src/main/java/inheritance/SubClass.java)
-
-B - наследник A
-Первый интерфейс
 ``` java
     public interface I1 {
         void m1();
     }
 ```
 
-A
-/ \
-B C
-\ /
-D
-AbstractClass
 [src/main/java/multi/Demo.java](src/main/java/multi/Demo.java)
 
 ``` java
@@ -81,6 +69,7 @@ AbstractClass
     private int onlyInA = 2;
 
     // Внутри класса A и всех наследников A
+    // + внутри пакета
     protected int withSubclasses = 3;
 
     // Доступно всем
@@ -89,7 +78,6 @@ AbstractClass
 
 [src/main/java/n_public_private_protected/A.java](src/main/java/n_public_private_protected/A.java)
 
-Класс B - наследник класса A (в том же пакете)
 ``` java
 public class B extends A {
 
@@ -103,21 +91,4 @@ public class B extends A {
 ```
 
 [src/main/java/n_public_private_protected/B.java](src/main/java/n_public_private_protected/B.java)
-
-Пользовательский класс внутри того же пакета
-[src/main/java/n_public_private_protected/UserClassInSamePackage.java](src/main/java/n_public_private_protected/UserClassInSamePackage.java)
-
-a.withSubclasses = 10;
-System.out.println("a.withSubclasses = " + a.withSubclasses);
-[src/main/java/n_public_private_protected_user/UserClass.java](src/main/java/n_public_private_protected_user/UserClass.java)
-
-...
-[src/main/java/package2/MyClass.java](src/main/java/package2/MyClass.java)
-
-privateField = 11;
-[src/main/java/package2/MyClassSubclass.java](src/main/java/package2/MyClassSubclass.java)
-
-Поле в том же пакете
-Не работает: myClass.privateField
-[src/main/java/package2/TestInSamePackage.java](src/main/java/package2/TestInSamePackage.java)
 

@@ -22,11 +22,13 @@ Java->class->JVM. Первое приложение Hello World. Package
 
 + класс String
 
-Управляющие конструкции
------------------------
+Управляющие конструкции if, else, while, switch
+-----------------------------------------------
 
 if, else, while, switch
 
+Первая программа на Java (Hello World)
+--------------------------------------
 ``` java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -42,8 +44,19 @@ public class HelloWorld {
 }
 ```
 
+Если вы изучали Pascal/Delphi:
+``` pas
+Writeln('Hello, world!');
+```
+C/С++:
+``` cpp
+printf("Hello, world!\n"); // С
+cout << "Hello, world!" << endl; // C++
+```
 [src/main/java/p00_helloworld/HelloWorld.java](src/main/java/p00_helloworld/HelloWorld.java)
 
+Шаблоны Idea для быстрого ввода кода: psvm, sout+v/m, fori...
+-------------------------------------------------------------
 ``` java
     // Шаблон: psvm + <tab>
     // [p]ublic [s]tatic [v]oid [m]ain
@@ -105,12 +118,32 @@ public class Main {
 
 8 примитивных типов данных: byte, short, int, long, float, double, boolean, char
 --------------------------------------------------------------------------------
+**Целочисленные типы:**
+1. 8 битное целое - **byte**: -128..127.
+Подробнее:
+http://ru.wikipedia.org/wiki/Дополнительный_код_(представление_числа)
+
+| Двоичное  |Дополнительный код | Байт |
+|-----------|:-----------------:|:----:|
+| 00000000  |    0              |   0  |
+| 00000001  |    1              |   1  |
+| 00000010  |    2              |   2  |
+| 00000011  |    3              |   3  |
+| 00000100  |    4              |   4  |
+|  ...      |   ...             | ...  |
+| 01111111  |   127             | 127  |
+| 10000000  |   -128            | 128  |
+|  ...      |   ...             | ...  |
+| 11111111  |   -1              | 255  |
+
+2. 16-битное целое **short**: -2^15..2^15-1  -32768..32767
 ``` java
         short sh = 32767; // -32768..32767
         System.out.println("short = " + sh + " " +
                 Short.MIN_VALUE + ".." + Short.MAX_VALUE);
 ```
 
+3. 32-битное целое **int**
 ``` java
         int integerBinary = 0b10101010; // Начиная с Java7
         System.out.println("Integer.toBinaryString(integerBinary) = " + Integer.toBinaryString(integerBinary));
@@ -133,6 +166,46 @@ public class Main {
         System.out.println("Integer.MAX_VALUE = " + Integer.MAX_VALUE);
 ```
 
+4. 64-битное целое **long**
+-128..127
+
+& - побитовое И     &&
+0011
+0101
+0001
+
+| - побитовое ИЛИ
+0011
+0101
+0111
+
+~ - побитовое НЕ
+01
+10
+
+^ - XOR - исключающее ИЛИ
+0011
+0101
+0110
+
+Вещественные типы (действительные) - IEEE
+5. **float** - 4 байта
+6. **double** - 8 байт
+10101101 * 2^{1010101}
+Длинная арифметика
+7. Логический тип: true / false
+&& - И  || - ИЛИ
+
+true / false
+&& - логическое И
+|| - логическое ИЛИ
+Boolean
+8. Символьный тип **char**
+
+Переменные, методы, классы можно
+называть по-русски, имена в кодировке Unicode
+И это лучше чем в транслите
+Условный оператор **if**
 ``` java
         //if(2 && 3){
         //
@@ -144,6 +217,14 @@ public class Main {
         }
 ```
 
+Цикл с предусловием - While
+Цикл с постусловием - Repeat Until
+Цикл for
+Вывод аргументов командной строки
+foreach
+
+Сокращённая форма: +=, -=..., инкремент/декремент, префиксный/постфиксный
+-------------------------------------------------------------------------
 ``` java
         // Сложение
         a = a + 10;
@@ -198,6 +279,13 @@ public class Main {
 
 [src/main/java/p01_datatypes/B_if_else.java](src/main/java/p01_datatypes/B_if_else.java)
 
+Проверяем что a+b = c в double
+Обработка погрешности
+Проверяем что a+b = c в float
+[src/main/java/p01_datatypes/C2_FloatAccuracy.java](src/main/java/p01_datatypes/C2_FloatAccuracy.java)
+
+Точность вычислений в действительных числах
+-------------------------------------------
 ``` java
         double a = 0.3;
         double b = 0.6;
@@ -214,6 +302,8 @@ public class Main {
 
 [src/main/java/p01_datatypes/C_FloatAccuracy.java](src/main/java/p01_datatypes/C_FloatAccuracy.java)
 
+Массивы. Arrays: foreach, многомерные
+-------------------------------------
 ``` java
         // Инициализация
         int[] intArray1 = new int[]{1, 2, 3, 10};
@@ -225,6 +315,7 @@ public class Main {
         intArray3 = new int[100];
 ```
 
+Пробегаем по всем элементам массива
 ``` java
         for (int i = 0; i < intArray2.length; i++) {
             System.out.println("intArray1[" + i + "] = " +
@@ -238,6 +329,7 @@ public class Main {
         System.out.println(); // Просто перевод строки
 ```
 
+Двухмерный массив
 ``` java
         int[][] array2D = {
                 {1, 2, 3},
@@ -250,6 +342,10 @@ public class Main {
 
 [src/main/java/p01_datatypes/D_Arrays.java](src/main/java/p01_datatypes/D_Arrays.java)
 
+
+Передача параметров по ссылке и значению
+----------------------------------------
+i примитивного типа - передаётся по значению
 ``` java
         int i = 10;
         // Integer
@@ -276,6 +372,7 @@ public class Main {
         System.out.println("После вызова method2 object.i = " + object.i);
 ```
 
+i значение копируется
 ``` java
     static void method1(int i) {
         i += 20;
@@ -284,6 +381,7 @@ public class Main {
     }
 ```
 
+i передаётся по ссылке
 ``` java
     static void myMethod2(MyClass i) {
         //i = new MyClass();
@@ -300,6 +398,8 @@ public class Main {
 
 [src/main/java/p01_datatypes/E_ByValueByReference.java](src/main/java/p01_datatypes/E_ByValueByReference.java)
 
+Операции: арифметические, побитовые, логические
+-----------------------------------------------
 ``` java
         // 8 базовых (примитивных) типов
         // 4 целочисленных типа (знаковые)
@@ -320,6 +420,8 @@ public class Main {
         myBoolean1 = false;
 ```
 
+Массивы
+Арифметические операции
 ``` java
         int c = a + b; // сложение
         //   - - вычитание
@@ -369,6 +471,27 @@ public class Main {
 
 [src/main/java/p01_datatypes/H_Operators.java](src/main/java/p01_datatypes/H_Operators.java)
 
+%d - целые числа
+%n - перевод строки соответствующий платформе
+13,10 - Windows  CRLF
+10 - *nix  LF
+13 - MacOS (классических, до перехода на ядро BSD) CR
+3 символа на каждое число
+В шестнадцатеричном виде
+af3d
+AF3D
+0000FE23
+Перевод
+Действительные числа
+1.1221E+12
+[src/main/java/p01_datatypes/I_Printf.java](src/main/java/p01_datatypes/I_Printf.java)
+
+
+**Решение квадратного уравнения**
+
+Назначаем локаль, чтобы разделителем
+целой и десятичной дроби была "."
+Считываем коэффициенты с клавиатуры
 ``` java
         double a, b, c;
         Scanner s = new Scanner(System.in);
@@ -382,10 +505,13 @@ public class Main {
         c = s.nextDouble();
 ```
 
+Вычисляем дискриминант:
+double D = b * b - 4 * a * c;
 ``` java
         double D = pow(b, 2) - 4 * a * c; // pow - power
 ```
 
+Теперь проверяем знак дискриминанта
 ``` java
         if (abs(D) < 1e-16) {
             double x = -b / (2 * a);
@@ -405,6 +531,7 @@ public class Main {
 
 Циклы: while, do while, for
 ---------------------------
+Цикл с предусловием **while(условие) тело_цикла;**
 ``` java
         int N = 6;
         System.out.print("N = " + N + " = (inverse binary) = ");
@@ -415,6 +542,7 @@ public class Main {
         System.out.println();
 ```
 
+Цикл с постусловием **do { тело_цикла } while (условие);**
 ``` java
         int x = 1000;
         do {
@@ -423,6 +551,7 @@ public class Main {
         } while (x > 10);
 ```
 
+Цикл **for(инициализация; условие продолжения; после итерации)**
 ``` java
         System.out.println(" Таблица умножения ");
         System.out.println("===================");
@@ -455,8 +584,31 @@ Markdown файл
 ------------------------------------------------
 >>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 
+Перевод строки на разных платформах
+-----------------------------------
+ASCII код 10 - LF - \n - перевод строки
+ASCII код 13 - CR - \r - возврат каретки
+MacOSX: 0 10 LF
+Windows: 0 13 CR + 1 10 LF
+MacOSX: 0 10 LF
+[src/test/java/p01_datatypes/NewLineTest.java](src/test/java/p01_datatypes/NewLineTest.java)
+
+
+Работа со строками
+------------------
+http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+Подстрока
+Создание пустой строки
+Returns the char value at the specified index
+Сравнение строк
+Сравнение без учёта регистра
+Массив символов с символа по символ
+Замена символов replace
+Шаблоны
+Шаблон телефонного номера
 ```
 
+Сравнение строк
 ``` java
     @Test
     public void testStrEq() {
@@ -482,12 +634,4 @@ Markdown файл
     }
 }
 [src/test/java/p01_datatypes/StringTest.java](src/test/java/p01_datatypes/StringTest.java)
-
-<<<<<<< HEAD
-Markdown файл
-=============
-=======
-Использование Markdown-разметки для документации
-------------------------------------------------
->>>>>>> 7968b25127064f5457bc24be25031cc6d9552a93
 

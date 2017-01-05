@@ -7,8 +7,8 @@ import java.util.Arrays;
 import static org.junit.Assert.*;
 
 //
-// Работа со строками
-// ------------------
+// Класс String: работа со строками
+// --------------------------------
 // http://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 public class StringTest {
 
