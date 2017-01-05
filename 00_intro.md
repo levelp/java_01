@@ -58,6 +58,12 @@ http://www.booksgid.com/programmer/4686-jekstremalnoe-programmirovanie.html
 TODO: Навести порядок в книгах
 + добавить ссылку на группу в альбом с внешним видом
 
+Книги по алгоритмам
+-------------------
+* Кормен Т., Лейзерстон Ч., Ривест Р. Алгоритмы: построение и анализ, Пер. с англ. – М.: МЦНМО, 2000. 
+* Кнут Дональд, Искусство программирования (The Art of Computer Programming) - https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F        
+* Шень А. Программирование: теоремы и задачи. http://www.e-academy7.narod.ru/COURSES/PROGRAM/LITERATURA/01shen.PDF
+
 Скачивание, установка и настройка Java
 --------------------------------------
 * Скачать Java SE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
