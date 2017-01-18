@@ -37,33 +37,6 @@
 * http://levelp.ru/knowledge-base/ - форум на сайте LevelUp (задавать вопросы по д.з.)
 * http://hashcode.ru/ - ответы на вопросы
 
-**Книги по Java**
-* Java 8. Карманный справочник.	Роберт Лигуори, Патриция Лигуори. https://www.ozon.ru/context/detail/id/30196193/
-* Программирование на Java. Патрик Нимейер, Дэниэл Леук. https://www.ozon.ru/context/detail/id/29684769/
-* Программирование на Java и C# для студента, О. Герман, Ю. Герман: http://www.bookvoed.ru/book?id=3819902
-* Head First Java (Java, A Beginner's Guide) - http://rutracker.org/forum/viewtopic.php?t=4212262
-* Java. The Complete Reference. 8th Edition / Java. Полное руководство. 8-е издание - http://rutracker.org/forum/viewtopic.php?t=4164907 - 
-* Test Driven Development (Kent Beck) - http://www.ozon.ru/context/detail/id/1501671/
-* Thinking in Java (Философия Java) Брюс Эккель: http://www.bookvoed.ru/book?id=422984
-* Искусство программирования на Java, Герберт Шилдт, Джеймс Холмс: http://www.bookvoed.ru/book?id=3483133
-* Java EE 7. Основы, Гупта А.: http://www.bookvoed.ru/book?id=6093759
-* Effective Java, автор Joshua Bloch (Джошуа Блох) - http://www.ozon.ru/context/detail/id/1259354/
-* Программист Прагматик (The Pragmatic Programmer) - подробно раскрыты общие методики программирования (книга похожа на сборник полезных советов)
-* Java concurrency in practice. - Многопоточность в Java.
-http://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601
-* Книга: Экстремальное программирование: разработка через тестирование
-http://www.booksgid.com/programmer/4686-jekstremalnoe-programmirovanie.html
-* Джошуа Блох "Java. Эффективное программирование" http://www.ozon.ru/context/detail/id/21724143/
-
-TODO: Навести порядок в книгах
-+ добавить ссылку на группу в альбом с внешним видом
-
-Книги по алгоритмам
--------------------
-* Кормен Т., Лейзерстон Ч., Ривест Р. Алгоритмы: построение и анализ, Пер. с англ. – М.: МЦНМО, 2000. 
-* Кнут Дональд, Искусство программирования (The Art of Computer Programming) - https://ru.wikipedia.org/wiki/%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F        
-* Шень А. Программирование: теоремы и задачи. http://www.e-academy7.narod.ru/COURSES/PROGRAM/LITERATURA/01shen.PDF
-
 Скачивание, установка и настройка Java
 --------------------------------------
 * Скачать Java SE: http://www.oracle.com/technetwork/java/javase/downloads/index.html
