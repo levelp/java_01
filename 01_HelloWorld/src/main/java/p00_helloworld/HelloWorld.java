@@ -1,0 +1,28 @@
+package p00_helloworld;
+
+/// 
+/// Java->class->JVM. Первая программа на Java (Hello World). Package
+/// -----------------------------------------------------------------
+//-->
+public class HelloWorld {
+    public static void main(String[] args) {
+        /*
+             Многострочный комментарий
+              */
+        // Однострочный комментарий
+        System.out.println("Hello, world!");
+
+        //int i; // В стек основного потока main
+        //Runtime.getRuntime().gc();
+    }
+}
+//<--
+// Если вы изучали Pascal/Delphi:
+// ``` pas
+// Writeln('Hello, world!');
+// ```
+// C/С++:
+// ``` cpp
+// printf("Hello, world!\n"); // С
+// cout << "Hello, world!" << endl; // C++
+// ```

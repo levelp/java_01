@@ -1,0 +1,31 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+atlassian-ide-plugin.xml
+.DS_Store
+
+nbproject
+out
+private
+build
+dist
+target
+
+# Log-files
+*.log
+
+# Конфигурационный файл .idea
+.idea
+*.iml
+.idea/workspace.xml
+
